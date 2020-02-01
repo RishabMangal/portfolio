@@ -21,7 +21,7 @@ import python from "./logo/python.jpg";
 import todo from "./logo/todo.jpg"
 import contactmanager from './logo/contactmanager.png'
 import feed from './logo/feed.jpg'
-import emailjs, { init } from 'emailjs-com'
+import emailjs from 'emailjs-com'
 class Resume extends Component {
   state = {
     from: "",
