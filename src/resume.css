@@ -1,0 +1,62 @@
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 2px;
+    padding-left: 8%;
+    font-size: medium;
+
+}
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+i {
+    color: white;
+    font-size: 30px;
+}
+
+i:hover {
+    color: aqua;
+}
+
+
+.test {
+    text-decoration: none;
+}
+
+div {
+    border: white !important;
+}
+
+
+.skill {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    vertical-align: top;
+    background-color: rgba(119, 146, 185, 0.253);
+    border-radius: 10%;
+    margin: 10px;
+    margin-top: 60px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /* float: left; */
+}
+
+.skillimg {
+    border-radius:50%;
+    border: 0px solid black;
+    width: 40%;
+    height:100%;
+    margin-left: 0px;
+    /* margin-right: 100%; */
+    /* float: left; */
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+}
