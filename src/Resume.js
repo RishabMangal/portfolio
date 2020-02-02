@@ -22,20 +22,22 @@ import todo from "./logo/todo.jpg"
 import contactmanager from './logo/contactmanager.png'
 import feed from './logo/feed.jpg'
 import emailjs from 'emailjs-com'
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 class Resume extends Component {
   state = {
     from: "",
     from_email: "",
     subject: "",
-    message:""
-  }
+    message: "",
+    loading:false
+    }
   onChangeHandler = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   }
   submitHandler = (e) => {
     e.preventDefault();
-    
-    
+    this.setState({ ...this.state, loading: true });    
    var template_params = {
    "from": this.state.from,
    "from_email": this.state.from_email,
@@ -53,7 +55,8 @@ var template_id = "portfolio";
           from: "",
           from_email: "",
           subject: "",
-          message: ""
+          message: "",
+          loading:false
         });
       })
   .catch(err => console.log("error", err));
@@ -878,75 +881,116 @@ var template_id = "portfolio";
           >
             Contact Me
           </h2>
-
-          <div
-            className="card mr-auto"
-            style={{
-              width: "40%",
-              display: "inline-block",
-              marginLeft: "10%",
-              backgroundColor: "#F1F1F1",
-              borderRight: "2px solid white"
-            }}
-          >
-            <form className="card-body" onSubmit={this.submitHandler}>
-              <div className="form-row" id="test">
-                <div className="form-group col-md-5">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Jack Sparrow"
-                    onChange={this.onChangeHandler}
-                    name="from"
-                    value={this.state.from}
-                  ></input>
-                </div>
-                <div className="form-group col-md-7">
-                  <div className="input-group-prepend">
-                    <div className="input-group-text">@</div>
+          {this.state.loading ? (
+            <div
+              className="card mr-auto"
+              style={{
+                width: "40%",
+                display: "inline-block",
+                marginLeft: "10%",
+                backgroundColor: "#F1F1F1",
+                borderRight: "2px solid white"
+              }}
+            >
+              <div
+                style={{
+                  backgroundColor: "#F1F1F1",
+                  margin: "3%",
+                  padding: "6%",
+                  width: "30%",
+                  marginLeft: "35%",
+                  marginBottom: "0"
+                }}
+              >
+                <Loader type="Plane" color="#1B73BA" width={100} height={90} />
+              </div>
+              <div
+                className="lead"
+                style={{
+                  backgroundColor: "#F1F1F1",
+                  padding: "5%",
+                  width: "30%",
+                  marginLeft: "35%",
+                  marginTop: "0",
+                  marginBottom: "8%",
+                  fontFamily: "comic sans ms",
+                  fontStyle: "italic",
+                  textAlign: "center"
+                }}
+              >
+                Sending...
+              </div>
+            </div>
+          ) : (
+            <div
+              className="card mr-auto"
+              style={{
+                width: "40%",
+                display: "inline-block",
+                marginLeft: "10%",
+                backgroundColor: "#F1F1F1",
+                borderRight: "2px solid white"
+              }}
+            >
+              <form className="card-body" onSubmit={this.submitHandler}>
+                <div className="form-row" id="test">
+                  <div className="form-group col-md-5">
                     <input
-                      type="email"
+                      type="text"
                       className="form-control"
-                      placeholder="lucifer@microsoft.com"
+                      placeholder="Jack Sparrow"
                       onChange={this.onChangeHandler}
-                      name="from_email"
-                      value={this.state.from_email}
+                      name="from"
+                      value={this.state.from}
+                    ></input>
+                  </div>
+                  <div className="form-group col-md-7">
+                    <div className="input-group-prepend">
+                      <div className="input-group-text">@</div>
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="lucifer@microsoft.com"
+                        onChange={this.onChangeHandler}
+                        name="from_email"
+                        value={this.state.from_email}
+                      ></input>
+                    </div>
+                  </div>
+                </div>
+                <div className="form-group">
+                  <div className="input-group-prepend">
+                    <div className="input-group-text">Subject</div>
+                    <input
+                      type="text"
+                      className="form-control"
+                      placeholder="Build A WebApp"
+                      onChange={this.onChangeHandler}
+                      name="subject"
+                      value={this.state.subject}
                     ></input>
                   </div>
                 </div>
-              </div>
-              <div className="form-group">
-                <div className="input-group-prepend">
-                  <div className="input-group-text">Subject</div>
-                  <input
-                    type="text"
+                <div className="form-group">
+                  <textarea
                     className="form-control"
-                    placeholder="Build A WebApp"
+                    rows="8"
+                    placeholder="Message"
                     onChange={this.onChangeHandler}
-                    name="subject"
-                    value={this.state.subject}
+                    name="message"
+                    value={this.state.message}
+                  ></textarea>
+                </div>
+                <div className="form-group">
+                  <input
+                    type="submit"
+                    className="btn btn-dark form-control"
+                    value="Submit"
                   ></input>
                 </div>
-              </div>
-              <div className="form-group">
-                <textarea
-                  className="form-control"
-                  rows="8"
-                  placeholder="Message"
-                  onChange={this.onChangeHandler}
-                  name="message"
-                  value={this.state.message}
-                ></textarea>
-              </div>
-              <div className="form-group">
-                <input
-                  type="submit"
-                  className="btn btn-dark form-control"
-                  value="Submit"
-                ></input>
-              </div>
-            </form>
-          </div>
+              </form>
+            </div>
+          )}
 
           <div
             className="card p-3"
