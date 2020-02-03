@@ -59,7 +59,7 @@ var template_id = "portfolio";
           loading:false
         });
       })
-  .catch(err => console.log("error", err));
+      .catch(err => { console.log("error", err);this.setState({...this.state,loading:false})});
     // emailjs
     //                         .send(
     //                           "gmail",
@@ -159,7 +159,7 @@ var template_id = "portfolio";
             }}
           >
             <div
-              className="card-body"
+              className="card"
               style={{
                 backgroundImage: `url(${profilePic})`,
                 backgroundSize: "cover",
