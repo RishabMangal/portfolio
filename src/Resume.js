@@ -83,8 +83,8 @@ var template_id = "portfolio";
             Rishab Mangal
           </h4>
           <ul
-            className="navbar-nav mr-auto"
-            style={{ position: "relative", right: "-55%" }}
+            className="navbar-nav mr-auto m-1"
+            style={{ position: "absolute", right: "0px" }}
           >
             <li className="nav-item px-3">
               <Link
@@ -422,159 +422,159 @@ var template_id = "portfolio";
             {/* --------------------------------------------------HTml------------------------------------------------------------------------------==================------ */}
             <span className="p-3 skill">
               <img className="skillimg" src={html} alt="html5"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 HTML
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------CSS-------------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={css} alt="css3"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 CSS
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------JS------------------------------------------------------------------------------------------------------ */}
             <span className="p-3 skill">
               <img className="skillimg" src={js} alt="js"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 JavaScript
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------NODEJS-------------------------------------------------------------------------------------------------- */}
 
             <span className="p-3 skill">
               <img className="skillimg" src={node} alt="nodejs"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 NodeJS
                 <p className="text-secondary font-weight-light">Beginner</p>
-              </p>
+              </div>
             </span>
 
             {/* --------------------------------------------------ReactJS------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={react} alt="reactjs"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 ReactJS
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------REdux--------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={redux} alt="redux"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 Redux
                 <p className="text-secondary font-weight-light">Beginner</p>
-              </p>
+              </div>
             </span>
 
             {/* --------------------------------------------------php----------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={php} alt="php"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 Php
                 <p className="text-secondary font-weight-light">Beginner</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------MySQL--------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={mysql} alt="mysql"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 MySQL
                 <p className="text-secondary font-weight-light">Beginner</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------MongoDB------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={mongo} alt="mongoDB"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 MongoDB
                 <p className="text-secondary font-weight-light">Beginner</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------BootStrap--------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={bootstrap} alt="bootstrap"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 BootStrap
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------C----------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={c} alt="C"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 C
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------C++---------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={cpp} alt="C++"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 C++
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------JAva-------------------------------------------------------------------------------------------------- */}
             <span className="p-3 skill">
               <img className="skillimg" src={java} alt="java"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 Java
                 <p className="text-secondary font-weight-light">Beginner</p>
-              </p>
+              </div>
             </span>
             {/* --------------------------------------------------Python------------------------------------------------------------------------------------------------ */}
             <span className="p-3 skill">
               <img className="skillimg" src={python} alt="Python"></img>
-              <p
+              <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
                 style={{ display: "inline-block", float: "right" }}
               >
                 Python
                 <p className="text-secondary font-weight-light">Intermidiate</p>
-              </p>
+              </div>
             </span>
           </div>
         </div>
@@ -592,16 +592,15 @@ var template_id = "portfolio";
             className=""
             style={{
               width: "70%",
-              backgroundColor: "gray",
+              backgroundColor: "#e6e6e6",
               marginTop: "1%",
               marginLeft: "15%",
               marginRight: "15%",
-              border: "1px solid gray",
-              borderRadius: "50px"
+              borderRadius: "50px",
+              padding: "0.0625%"
               //   borderBottomRightRadius: "50px"
             }}
           >
-            {" "}
             <a
               className=""
               style={{ textDecoration: "none" }}
@@ -610,23 +609,27 @@ var template_id = "portfolio";
             >
               <img
                 src={todo}
-                alt="project-shot"
-                className="px-1 mr-auto"
+                alt="project-snapshot"
+                className=""
                 style={{
                   width: "25%",
                   borderRight: "1px dashed gray",
-                  borderRadius: "10px"
+                  borderRadius: "10px",
+                  borderTopLeftRadius: "11%",
+                  borderBottomLeftRadius: "11%",
+                  marginTop: "0.2%"
                 }}
               ></img>
             </a>
-            <p
+            <div
               className="display-4 p-3 bg-light text-center font-italic"
               style={{
                 display: "inline-block",
                 verticalAlign: "top",
                 width: "75%",
                 borderTopRightRadius: "50px",
-                borderBottomRightRadius: "25px"
+                borderBottomRightRadius: "50px",
+                margin: "0px"
               }}
             >
               To-do App
@@ -636,7 +639,7 @@ var template_id = "portfolio";
               >
                 A simple To-Do App to Store your todo list.
               </p>
-              <p
+              <div
                 className="p-2 m-1 text-left font-weight-normal"
                 style={{ display: "block", fontSize: "30px" }}
               >
@@ -651,8 +654,8 @@ var template_id = "portfolio";
                     https://tooo-dooo.herokuapp.com/
                   </a>
                 </span>
-              </p>
-              <p
+              </div>
+              <div
                 className="p-2 m-1 bg-light text-left font-weight-normal"
                 style={{ display: "block", fontSize: "30px" }}
               >
@@ -682,12 +685,12 @@ var template_id = "portfolio";
                       height: "60px",
                       padding: "2px",
                       margin: "2px",
-                      marginBottom: ""
+                      marginBottom: "0px"
                     }}
                   ></img>
                 </span>
-              </p>
-            </p>
+              </div>
+            </div>
           </div>
 
           {/* ---------------------Contact Manager--------------------------------------------------------------------------------------------------------- */}
@@ -696,12 +699,12 @@ var template_id = "portfolio";
             className=""
             style={{
               width: "70%",
-              backgroundColor: "whitesmoke",
+              backgroundColor: "#e6e6e6",
               marginTop: "1%",
               marginLeft: "15%",
               marginRight: "15%",
-              border: "1px solid gray",
-              borderRadius: "50px"
+              borderRadius: "50px",
+              padding: "0.0625%"
               //   borderBottomRightRadius: "50px"
             }}
           >
@@ -719,18 +722,22 @@ var template_id = "portfolio";
                 style={{
                   width: "25%",
                   borderRight: "1px dashed gray",
-                  borderRadius: "10px"
+                  borderRadius: "10px",
+                  borderTopLeftRadius: "11%",
+                  borderBottomLeftRadius: "11%",
+                  marginTop: "0.2%"
                 }}
               ></img>
             </a>
-            <p
-              className="display-4 p-2 bg-light text-center font-italic"
+            <div
+              className="display-4 p-3 bg-light text-center font-italic"
               style={{
                 display: "inline-block",
                 verticalAlign: "top",
                 width: "75%",
                 borderTopRightRadius: "50px",
-                borderBottomRightRadius: "25px"
+                borderBottomRightRadius: "50px",
+                margin: "0px"
               }}
             >
               Contact Manager
@@ -784,7 +791,7 @@ var template_id = "portfolio";
                   ></i>
                 </span>
               </p>
-            </p>
+            </div>
           </div>
           {/* -------------------------------------------Feedback Software------------------------------------------------------------------------ */}
 
@@ -792,12 +799,12 @@ var template_id = "portfolio";
             className=""
             style={{
               width: "70%",
-              backgroundColor: "whitesmoke",
+              backgroundColor: "#e6e6e6",
               marginTop: "1%",
               marginLeft: "15%",
               marginRight: "15%",
-              border: "1px solid gray",
-              borderRadius: "50px"
+              borderRadius: "50px",
+              padding: "0.0625%"
               //   borderBottomRightRadius: "50px"
             }}
           >
@@ -815,18 +822,23 @@ var template_id = "portfolio";
                 style={{
                   width: "25%",
                   borderRight: "1px dashed gray",
-                  borderRadius: "10px"
+                  borderRadius: "10px",
+                  borderTopLeftRadius: "11%",
+                  borderBottomLeftRadius: "11%",
+                  marginTop: "0.1%"
                 }}
               ></img>
             </a>
-            <p
-              className="display-4 p-2 bg-light text-center font-italic"
+            <div
+              className="display-4 p-3 bg-light text-center font-italic"
               style={{
                 display: "inline-block",
                 verticalAlign: "top",
                 width: "75%",
                 borderTopRightRadius: "50px",
-                borderBottomRightRadius: "25px"
+                borderBottomRightRadius: "50px",
+                margin: "0px"
+                // padding:"5%"
               }}
             >
               Feedback Software
@@ -864,7 +876,7 @@ var template_id = "portfolio";
                   ></i>
                 </span>
               </p>
-            </p>
+            </div>
           </div>
         </div>
 
