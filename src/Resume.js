@@ -19,6 +19,7 @@ import c from "./logo/c.png";
 import cpp from "./logo/cpp.png";
 import java from "./logo/java.png";
 import python from "./logo/python.jpg";
+import unity from "./logo/unity.jpg";
 import todo from "./logo/todo.jpg"
 import contactmanager from './logo/contactmanager.png'
 import feed from './logo/feed.jpg'
@@ -74,7 +75,9 @@ var template_id = "portfolio";
             className="navbar-brand text-secondary lead font-weight-normal nav-link"
             style={{ fontFamily: "comic sans ms", fontSize: "30px" }}
           >
-            <a href="#home" className="text-secondary">Rishab Mangal</a>
+            <a href="#home" className="text-secondary">
+              Rishab Mangal
+            </a>
           </h4>
           <ul
             className="navbar-nav mr-auto m-1"
@@ -571,8 +574,21 @@ var template_id = "portfolio";
                 <p className="text-secondary font-weight-light">Intermidiate</p>
               </div>
             </span>
+
+            {/* --------------------------------------------------unity------------------------------------------------------------------------------------------------ */}
+            <span className="p-3 skill">
+              <img className="skillimg" src={unity} alt="Unity"></img>
+              <div
+                className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
+                style={{ display: "inline-block", float: "right" }}
+              >
+                Unity
+                <p className="text-secondary font-weight-light">Beginner</p>
+              </div>
+            </span>
           </div>
         </div>
+
         {/* --------------------------------Projects------------------------------------------------------------------------------------------------------------------------*/}
         <div className="card  my-5 " id="projects">
           <h2
