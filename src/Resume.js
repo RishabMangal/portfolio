@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import "./resume.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import profilePic from "./profile.jpg";
+import portfolio from './logo/portfolio.png'
 import cover from "./cover.jpg";
 import node from "./logo/node.png";
 import react from "./logo/react.jpg";
@@ -60,13 +61,6 @@ var template_id = "portfolio";
         });
       })
       .catch(err => { console.log("error", err);this.setState({...this.state,loading:false})});
-    // emailjs
-    //                         .send(
-    //                           "gmail",
-    //                           "test",
-    //                           { name: "rishab", note: "test" },
-    //                           "user_lkMMesURFUC65Hi58FbKe"
-    //                         )   
     console.log("i m called");  
   };
   render() {
@@ -77,63 +71,64 @@ var template_id = "portfolio";
           role="navigation"
         >
           <h4
-            className="navbar-brand text-secondary lead font-weight-normal"
+            className="navbar-brand text-secondary lead font-weight-normal nav-link"
             style={{ fontFamily: "comic sans ms", fontSize: "30px" }}
           >
-            Rishab Mangal
+            <a href="#home" className="text-secondary">Rishab Mangal</a>
           </h4>
           <ul
             className="navbar-nav mr-auto m-1"
             style={{ position: "absolute", right: "0px" }}
           >
             <li className="nav-item px-3">
-              <Link
-                to="/#"
-                className="navlink text-secondary"
-                style={{ textDecoration: "none" }}
-              >
-                Experience
-              </Link>
-            </li>
-            <li className="nav-item px-3">
-              <Link
-                to="/#"
+              <a
+                href="#education"
                 className="navlink text-secondary"
                 style={{ textDecoration: "none" }}
               >
                 Education
-              </Link>
+              </a>
             </li>
             <li className="nav-item px-3">
-              <Link
-                to="/#"
+              <a
+                href="#skills"
                 className="navlink text-secondary"
                 style={{ textDecoration: "none" }}
               >
                 Skills
-              </Link>
+              </a>
             </li>
             <li className="nav-item px-3">
-              <Link
-                to="/#"
+              <a
+                href="#projects"
                 className="navlink text-secondary"
                 style={{ textDecoration: "none" }}
               >
                 Projects
-              </Link>
+              </a>
             </li>
             <li className="nav-item px-3">
-              <Link
-                to="/#"
+              <a
+                href="/#"
+                className="navlink text-secondary"
+                style={{ textDecoration: "none" }}
+              >
+                Hobbies
+              </a>
+            </li>
+            <li className="nav-item px-3">
+              <a
+                href="#contact"
                 className="navlink text-secondary"
                 style={{ textDecoration: "none" }}
               >
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
         <div
+          id="home"
           className="container-fluid"
           style={{
             backgroundColor: "orange",
@@ -272,7 +267,7 @@ var template_id = "portfolio";
           </p>
         </div>
 
-        <div className="card text-center p-2 my-5">
+        <div className="card text-center p-2 my-5" id="education">
           <h2 className="display-4 p-3 my-3 card">Education</h2>
 
           <div className="">
@@ -400,7 +395,7 @@ var template_id = "portfolio";
 
         {/* --------------------------------------------------------------------SKILLS-------------------------------------------------------------------------------------- */}
 
-        <div className="card text-center my-5">
+        <div className="card text-center my-5" id="skills">
           <h2
             className="display-4 p-3 card text-light"
             style={{
@@ -579,17 +574,17 @@ var template_id = "portfolio";
           </div>
         </div>
         {/* --------------------------------Projects------------------------------------------------------------------------------------------------------------------------*/}
-        <div className="card  my-5">
+        <div className="card  my-5 " id="projects">
           <h2
             className="text-center display-4 p-3 my-3 card"
-            style={{ backgroundColor: "#DDDDDD" }}
+            style={{ backgroundColor: "#F1F1F1" }}
           >
             Projects
           </h2>
           {/* <Project img={node}></Project> */}
           {/* -----------------------------------To-Do app--------------------------------------------------------------------------------------- */}
           <div
-            className=""
+            className="my-4"
             style={{
               width: "70%",
               backgroundColor: "#e6e6e6",
@@ -696,7 +691,7 @@ var template_id = "portfolio";
           {/* ---------------------Contact Manager--------------------------------------------------------------------------------------------------------- */}
 
           <div
-            className=""
+            className="my-4"
             style={{
               width: "70%",
               backgroundColor: "#e6e6e6",
@@ -796,7 +791,7 @@ var template_id = "portfolio";
           {/* -------------------------------------------Feedback Software------------------------------------------------------------------------ */}
 
           <div
-            className=""
+            className="my-4"
             style={{
               width: "70%",
               backgroundColor: "#e6e6e6",
@@ -878,11 +873,113 @@ var template_id = "portfolio";
               </p>
             </div>
           </div>
+          {/* ---------------------------------Portfolio-------------------------------------------------------------------------------------------------- */}
+
+          <div
+            className="my-3"
+            style={{
+              width: "70%",
+              backgroundColor: "#e6e6e6",
+              marginTop: "1%",
+              marginLeft: "15%",
+              marginRight: "15%",
+              borderRadius: "50px",
+              padding: "0.0625%"
+              //   borderBottomRightRadius: "50px"
+            }}
+          >
+            {" "}
+            <a
+              className=""
+              style={{ textDecoration: "none" }}
+              target="blank"
+              href="https://rishabmangal.netlify.com"
+            >
+              <img
+                src={portfolio}
+                alt="project-shot"
+                className="px-1 mr-auto"
+                style={{
+                  width: "25%",
+                  borderRight: "1px dashed gray",
+                  borderRadius: "10px",
+                  borderTopLeftRadius: "11%",
+                  borderBottomLeftRadius: "11%",
+                  marginTop: "0.2%"
+                }}
+              ></img>
+            </a>
+            <div
+              className="display-4 p-3 bg-light text-center font-italic"
+              style={{
+                display: "inline-block",
+                verticalAlign: "top",
+                width: "75%",
+                borderTopRightRadius: "50px",
+                borderBottomRightRadius: "50px",
+                margin: "0px"
+              }}
+            >
+              Portfolio
+              <p
+                className="lead text-secondary p-2 m-3 my-4 font-weight-light "
+                // style={{ display: "block",fontSize:"40px" }}
+              >
+                A simple App to Showcase my CV and Skills.
+              </p>
+              <p
+                className="p-2 m-1 text-left font-weight-normal"
+                style={{ display: "block", fontSize: "30px" }}
+              >
+                Link -{" "}
+                <span className="lead text-secondary">
+                  <a
+                    className="text-secondary text-center"
+                    style={{ textDecoration: "none" }}
+                    target="blank"
+                    href="https://rishabmangal.netlify.com"
+                  >
+                    https://rishabmangal.netlify.com
+                  </a>
+                </span>
+              </p>
+              <p
+                className="p-2 m-1 bg-light text-left font-weight-normal"
+                style={{ display: "block", fontSize: "30px" }}
+              >
+                <span style={{ width: "30%" }}>Tech Used:</span>
+                <span style={{ width: "70%" }}>
+                  <i
+                    className="fab fa-html5 px-2 mr-2 font-weight-light"
+                    style={{ fontSize: "200%", color: "#E44D26" }}
+                  ></i>
+                  <i
+                    className="fab fa-css3-alt px-2 mr-2 text-primary font-weight-light"
+                    style={{ fontSize: "200%" }}
+                  ></i>
+                  <i
+                    className="fab fa-js-square px-2 mr-2 text-warning font-weight-light"
+                    style={{ fontSize: "200%" }}
+                  ></i>
+                  <i
+                    className="fab fa-node px-2 mr-2 text-success font-weight-light"
+                    style={{ fontSize: "200%" }}
+                  ></i>
+                  <i
+                    className="fab fa-react px-2 mr-2 text-primary font-weight-light"
+                    style={{ fontSize: "200%" }}
+                  ></i>
+                </span>
+              </p>
+            </div>
+          </div>
+
+          {/* ---------------------------------------------------------------------------------------------------------------------------- */}
         </div>
 
         {/* ---------------------------------------------Contact--------------------------------------------------------------------------------------------- */}
 
-        <div>
+        <div id="contact">
           <h2
             className="display-4 p-3 card text-dark text-center"
             style={{
