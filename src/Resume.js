@@ -73,7 +73,7 @@ var template_id = "portfolio";
         >
           <h4
             className="navbar-brand text-secondary lead font-weight-normal nav-link"
-            style={{ fontFamily: "comic sans ms", fontSize: "30px" }}
+            style={{ fontFamily: "comic sans ms", fontSize: "1.35vw" }}
           >
             <a href="#home" className="text-secondary">
               Rishab Mangal
@@ -295,7 +295,7 @@ var template_id = "portfolio";
                 borderLeft: "1px solid gray"
               }}
             >
-              <p className="text-justify lead text-left">
+              <p className="lead text-left">
                 Indian Institute of Information Technology Kota
               </p>
               <p className="text-secondary text-left font-weight-light">
@@ -652,7 +652,7 @@ var template_id = "portfolio";
               </p>
               <div
                 className="p-2 m-1 text-left font-weight-normal"
-                style={{ display: "block", fontSize: "30px" }}
+                style={{ display: "block", fontSize: "1.35vw" }}
               >
                 Link -{" "}
                 <span className="lead text-secondary">
@@ -668,7 +668,7 @@ var template_id = "portfolio";
               </div>
               <div
                 className="p-2 m-1 bg-light text-left font-weight-normal"
-                style={{ display: "block", fontSize: "30px" }}
+                style={{ display: "block", fontSize: "1.35vw" }}
               >
                 <span style={{ width: "30%" }}>Tech Used:</span>
                 <span style={{ width: "70%" }}>
@@ -693,7 +693,7 @@ var template_id = "portfolio";
                     alt="mongoDB"
                     className="bg-light"
                     style={{
-                      height: "60px",
+                      height: "2.5vw",
                       padding: "2px",
                       margin: "2px",
                       marginBottom: "0px"
@@ -760,7 +760,7 @@ var template_id = "portfolio";
               </p>
               <p
                 className="p-2 m-1 text-left font-weight-normal"
-                style={{ display: "block", fontSize: "30px" }}
+                style={{ display: "block", fontSize: "1.35vw" }}
               >
                 Link -{" "}
                 <span className="lead text-secondary">
@@ -776,7 +776,7 @@ var template_id = "portfolio";
               </p>
               <p
                 className="p-2 m-1 bg-light text-left font-weight-normal"
-                style={{ display: "block", fontSize: "30px" }}
+                style={{ display: "block", fontSize: "1.35vw" }}
               >
                 <span style={{ width: "30%" }}>Tech Used:</span>
                 <span style={{ width: "70%" }}>
@@ -861,7 +861,7 @@ var template_id = "portfolio";
               </p>
               <p
                 className="p-2 m-1 text-left font-weight-normal"
-                style={{ display: "block", fontSize: "30px" }}
+                style={{ display: "block", fontSize: "1.35vw" }}
               >
                 Link -{" "}
                 <span className="lead text-secondary">
@@ -877,7 +877,7 @@ var template_id = "portfolio";
               </p>
               <p
                 className="p-2 m-1 bg-light text-left font-weight-normal"
-                style={{ display: "block", fontSize: "30px" }}
+                style={{ display: "block", fontSize: "1.35vw" }}
               >
                 <span style={{ width: "30%" }}>Tech Used:</span>
                 <span style={{ width: "70%" }}>
@@ -945,7 +945,7 @@ var template_id = "portfolio";
               </p>
               <p
                 className="p-2 m-1 text-left font-weight-normal"
-                style={{ display: "block", fontSize: "30px" }}
+                style={{ display: "block", fontSize: "1.35vw" }}
               >
                 Link -{" "}
                 <span className="lead text-secondary">

@@ -5,13 +5,14 @@ ul {
 li {
     padding: 2px;
     padding-left: 8%;
-    font-size: medium;
+    font-size: 1.05vw;
 
 }
 
 * {
     padding: 0%;
     margin: 0%;
+    box-sizing: border-box;
 }
 
 i {
@@ -60,4 +61,13 @@ div {
 a:link{
     text-decoration: none;
     text-decoration-color: none;
+}
+p{
+    font-size: 1.35vw;
+}
+h1{
+    font-size: 2vw;
+}
+h2{
+    font-size: 1.75vw;
 }
