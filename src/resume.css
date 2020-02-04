@@ -17,7 +17,7 @@ li {
 
 i {
     color: white;
-    font-size: 30px;
+    font-size: 1.5vw;
 }
 
 i:hover {
@@ -30,7 +30,8 @@ i:hover {
 }
 
 div {
-    border: white !important;
+    border:  #f1f1f1 !important;
+    /* font-size: 1.35vw; */
 }
 
 
@@ -63,7 +64,7 @@ a:link{
     text-decoration-color: none;
 }
 p{
-    font-size: 1.35vw;
+    font-size: 1.35vw !important;
 }
 h1{
     font-size: 2vw;
@@ -71,3 +72,4 @@ h1{
 h2{
     font-size: 1.75vw;
 }
+

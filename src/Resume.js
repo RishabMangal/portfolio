@@ -68,7 +68,7 @@ var template_id = "portfolio";
     return (
       <div style={{ padding: "0px", margin: "0px" }}>
         <div
-          className="header navbar navbar-expand-sm bg-light fixed-top"
+          className="header navbar navbar-expand-sm bg-light sticky-top mr-auto "
           role="navigation"
         >
           <h4
@@ -134,53 +134,72 @@ var template_id = "portfolio";
           id="home"
           className="container-fluid"
           style={{
-            backgroundColor: "orange",
             backgroundImage: `url(${cover})`,
             backgroundSize: "cover",
-            height: "50%",
-            width: "100%"
+            width: "100%",
+            height: "35vw ",
+            padding: "1px"
           }}
         >
+          {/* <br></br>
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
+          <br></br> */}
           {/* -----------------------------------------------card------------------------------------------------------------------------------------------------------------ */}
           <div
-            className="container-fluid p-0 card-body"
+            className="container-fluid bg-success p-0"
             style={{
               width: "60%",
-              height: "600px"
+              // height: "80%",
+              marginTop: "10.5%",
+              padding: "1px"
+              // verticalAlign:"bottom"
               // backgroundColor: "rgba(255, 255, 255, 1);",
               // position: "relative",
               // top: "65px"
             }}
           >
             <div
-              className="card"
+              className="card container-fluid"
               style={{
+                backgroundColor: "yellow",
                 backgroundImage: `url(${profilePic})`,
                 backgroundSize: "cover",
                 width: "50%",
-                height: "80%",
+                height: "50vh",
                 padding: "0px",
                 display: "inline-block",
-                position: "relative",
-                bottom: "-117px"
+                verticalAlign: "top"
               }}
             >
-              {/* <img src={profilePic} alt="batman" style={{width:"100%",height:"100%",display:"inline-block",margin:"0px",padding:"0px"}}></img> */}
+              <img
+                src={profilePic}
+                alt="batman"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  display: "inline-block",
+                  margin: "0px",
+                  padding: "0px"
+                }}
+              ></img>
             </div>
             <div
-              className="card"
+              className="card container-fluid"
               style={{
+                height: "50vh",
                 width: "50%",
-                height: "80%",
+                paddingTop: "6%",
+                paddingLeft:"1%",
+                paddingRight:"1%",
+                // height: "80%",
                 // backgroundColor: "white",
+                // marginTop:"6%",
                 display: "inline-block"
               }}
             >
-              <ul className="card-body">
+              <ul className="">
                 <li className="text-dark text-center lead font-weight-bold">
                   Rishab Mangal
                 </li>
@@ -218,34 +237,19 @@ var template_id = "portfolio";
                 <i className="fab fa-linkedin px-3 mr-auto"></i>
               </a>
               <a href="https://api.whatsapp.com/send?phone=9928799243&text=Hello">
-                <i
-                  className="fab fa-whatsapp px-3 mr-auto"
-                  // style={{ position: "relative", left: 0 }}
-                ></i>
+                <i className="fab fa-whatsapp px-3 mr-auto"></i>
               </a>
               <a href="https://www.facebook.com/rishabh.mangal.77">
-                <i
-                  className="fab fa-facebook-square px-3 mr-auto"
-                  // style={{ position: "relative", left: 0 }}
-                ></i>
+                <i className="fab fa-facebook-square px-3 mr-auto"></i>
               </a>
               <a href="https://www.instagram.com/rishabhmangal1/">
-                <i
-                  className="fab fa-instagram px-3 mr-auto"
-                  // style={{ position: "relative", left: 0 }}
-                ></i>
+                <i className="fab fa-instagram px-3 mr-auto"></i>
               </a>
               <a href="https://github.com/RishabMangal">
-                <i
-                  className="fab fa-github px-3 mr-auto"
-                  // style={{ position: "relative", left:0 }}
-                ></i>
+                <i className="fab fa-github px-3 mr-auto"></i>
               </a>
               <a href="https://www.github.com">
-                <i
-                  className="fab fa-google-plus px-3 mr-auto"
-                  // style={{ position: "relative", left:0 }}
-                ></i>
+                <i className="fab fa-google-plus px-3 mr-auto"></i>
               </a>
               {/* </ul> */}
             </div>
@@ -422,7 +426,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={html} alt="html5"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 HTML
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -433,7 +441,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={css} alt="css3"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 CSS
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -444,7 +456,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={js} alt="js"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 JavaScript
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -456,7 +472,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={node} alt="nodejs"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 NodeJS
                 <p className="text-secondary font-weight-light">Beginner</p>
@@ -468,7 +488,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={react} alt="reactjs"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 ReactJS
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -479,7 +503,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={redux} alt="redux"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 Redux
                 <p className="text-secondary font-weight-light">Beginner</p>
@@ -491,7 +519,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={php} alt="php"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 Php
                 <p className="text-secondary font-weight-light">Beginner</p>
@@ -502,7 +534,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={mysql} alt="mysql"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 MySQL
                 <p className="text-secondary font-weight-light">Beginner</p>
@@ -513,7 +549,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={mongo} alt="mongoDB"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 MongoDB
                 <p className="text-secondary font-weight-light">Beginner</p>
@@ -524,7 +564,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={bootstrap} alt="bootstrap"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 BootStrap
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -535,7 +579,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={c} alt="C"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 C
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -546,7 +594,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={cpp} alt="C++"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 C++
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -557,7 +609,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={java} alt="java"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 Java
                 <p className="text-secondary font-weight-light">Beginner</p>
@@ -568,7 +624,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={python} alt="Python"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 Python
                 <p className="text-secondary font-weight-light">Intermidiate</p>
@@ -580,7 +640,11 @@ var template_id = "portfolio";
               <img className="skillimg" src={unity} alt="Unity"></img>
               <div
                 className="lead text-light font-weight-bold text-center p-2 m-2 mr-4"
-                style={{ display: "inline-block", float: "right" }}
+                style={{
+                  display: "inline-block",
+                  float: "right",
+                  fontSize: "1.25vw"
+                }}
               >
                 Unity
                 <p className="text-secondary font-weight-light">Beginner</p>
@@ -1157,7 +1221,6 @@ var template_id = "portfolio";
                 borderLeft: "1px solid white"
               }}
             >
-              {/* <ul> */}
               <a href="mailto:rishabhmangal1@gmail.com?subject=Awesome App">
                 <i className="fas fa-envelope px-3 mr-auto"></i>
               </a>
@@ -1165,36 +1228,20 @@ var template_id = "portfolio";
                 <i className="fab fa-linkedin px-3 mr-auto"></i>
               </a>
               <a href="https://api.whatsapp.com/send?phone=9928799243&text=Hello">
-                <i
-                  className="fab fa-whatsapp px-3 mr-auto"
-                  // style={{ position: "relative", left: 0 }}
-                ></i>
+                <i className="fab fa-whatsapp px-3 mr-auto"></i>
               </a>
               <a href="https://www.facebook.com/rishabh.mangal.77">
-                <i
-                  className="fab fa-facebook-square px-3 mr-auto"
-                  // style={{ position: "relative", left: 0 }}
-                ></i>
+                <i className="fab fa-facebook-square px-3 mr-auto"></i>
               </a>
               <a href="https://www.instagram.com/rishabhmangal1/">
-                <i
-                  className="fab fa-instagram px-3 mr-auto"
-                  // style={{ position: "relative", left: 0 }}
-                ></i>
+                <i className="fab fa-instagram px-3 mr-auto"></i>
               </a>
               <a href="https://github.com/RishabMangal">
-                <i
-                  className="fab fa-github px-3 mr-auto"
-                  // style={{ position: "relative", left:0 }}
-                ></i>
+                <i className="fab fa-github px-3 mr-auto"></i>
               </a>
               <a href="https://www.github.com">
-                <i
-                  className="fab fa-google-plus px-3 mr-auto"
-                  // style={{ position: "relative", left:0 }}
-                ></i>
+                <i className="fab fa-google-plus px-3 mr-auto"></i>
               </a>
-              {/* </ul> */}
             </div>
           </div>
         </div>
