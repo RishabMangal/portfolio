@@ -148,7 +148,7 @@ var template_id = "portfolio";
           <br></br> */}
           {/* -----------------------------------------------card------------------------------------------------------------------------------------------------------------ */}
           <div
-            className="container-fluid bg-success p-0"
+            className="container-fluid p-0"
             style={{
               width: "60%",
               // height: "80%",
