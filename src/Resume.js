@@ -1063,8 +1063,8 @@ var template_id = "portfolio";
 
         {/* ---------------------------------Hobbies-------------------------------------------------------------------------------------------- */}
         <div>
-          <h2 className="display-4 text-center p-3  card">Hobbies</h2>
-          <div className="hobbies">
+          <h2 className="display-4 text-center m-0 p-3 card" style={{border:"2px solid #f1f1f1"}}>Hobbies</h2>
+          <div className="hobbies m-0">
             <div className="card-body hobby ">
               <img className="hobbyimg" src={music} alt="music"></img>
               <p className="lead">Music</p>
