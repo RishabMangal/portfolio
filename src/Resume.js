@@ -23,6 +23,12 @@ import unity from "./logo/unity.jpg";
 import todo from "./logo/todo.jpg"
 import contactmanager from './logo/contactmanager.png'
 import feed from './logo/feed.jpg'
+import music from './logo/music.png'
+import painting from './logo/painting2.png'
+import gaming from './logo/gaming.png'
+import movie from './logo/movie.png'
+import cooking from './logo/cooking.png'
+import photography from './logo/photography.png'
 import emailjs from 'emailjs-com'
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
@@ -81,7 +87,7 @@ var template_id = "portfolio";
           </h4>
           <ul
             className="navbar-nav mr-auto m-1"
-            style={{ position: "absolute", right: "0px" }}
+            style={{ position: "absolute", right: "0px"}}
           >
             <li className="nav-item px-3">
               <a
@@ -141,11 +147,6 @@ var template_id = "portfolio";
             padding: "1px"
           }}
         >
-          {/* <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br> */}
           {/* -----------------------------------------------card------------------------------------------------------------------------------------------------------------ */}
           <div
             className="container-fluid p-0"
@@ -154,10 +155,6 @@ var template_id = "portfolio";
               // height: "80%",
               marginTop: "10.5%",
               padding: "1px"
-              // verticalAlign:"bottom"
-              // backgroundColor: "rgba(255, 255, 255, 1);",
-              // position: "relative",
-              // top: "65px"
             }}
           >
             <div
@@ -170,7 +167,9 @@ var template_id = "portfolio";
                 height: "50vh",
                 padding: "0px",
                 display: "inline-block",
-                verticalAlign: "top"
+                // maxHeight:"10vh",
+                verticalAlign: "top",
+                overflow:"auto"
               }}
             >
               <img
@@ -181,7 +180,8 @@ var template_id = "portfolio";
                   height: "100%",
                   display: "inline-block",
                   margin: "0px",
-                  padding: "0px"
+                  opacity:"0",
+                  padding: "0px",
                 }}
               ></img>
             </div>
@@ -196,7 +196,9 @@ var template_id = "portfolio";
                 // height: "80%",
                 // backgroundColor: "white",
                 // marginTop:"6%",
-                display: "inline-block"
+                display: "inline-block",
+                overflow:"auto"
+
               }}
             >
               <ul className="">
@@ -226,7 +228,9 @@ var template_id = "portfolio";
                 backgroundColor: "#043869",
                 paddingBottom: "1%",
                 paddingTop: "2%",
-                paddingLeft: "25%"
+                paddingLeft: "25%",
+                overflow:"auto"
+
               }}
             >
               {/* <ul> */}
@@ -1056,6 +1060,39 @@ var template_id = "portfolio";
 
           {/* ---------------------------------------------------------------------------------------------------------------------------- */}
         </div>
+
+        {/* ---------------------------------Hobbies-------------------------------------------------------------------------------------------- */}
+        <div>
+          <h2 className="display-4 text-center p-3  card">Hobbies</h2>
+          <div className="hobbies">
+            <div className="card-body hobby ">
+              <img className="hobbyimg" src={music} alt="music"></img>
+              <p className="lead">Music</p>
+            </div>
+            <div className="card-body hobby ">
+              <img className="hobbyimg" src={movie} alt="music"></img>
+              <p className="lead">Movies</p>
+            </div>
+            <div className="card-body hobby ">
+              <img className="hobbyimg" src={gaming} alt="music"></img>
+              <p className="lead">Gaming</p>
+            </div>
+            <div className="card-body hobby ">
+              <img className="hobbyimg" src={painting} alt="music"></img>
+              <p className="lead">Painting</p>
+            </div>
+            <div className="card-body hobby ">
+              <img className="hobbyimg" src={cooking} alt="music"></img>
+              <p className="lead">Cooking</p>
+            </div>
+            <div className="card-body hobby ">
+              <img className="hobbyimg" src={photography} alt="music"></img>
+              <p className="lead">Photography</p>
+            </div>
+
+          </div>
+        </div>
+
 
         {/* ---------------------------------------------Contact--------------------------------------------------------------------------------------------- */}
 

@@ -30,7 +30,7 @@ i:hover {
 }
 
 div {
-    border:  #f1f1f1 !important;
+    border: #f1f1f1 !important;
     /* font-size: 1.35vw; */
 }
 
@@ -50,26 +50,64 @@ div {
 }
 
 .skillimg {
-    border-radius:50%;
+    border-radius: 50%;
     border: 0px solid black;
     width: 40%;
-    height:100%;
+    height: 100%;
     margin-left: 0px;
     /* margin-right: 100%; */
     /* float: left; */
     display: inline-block;
 }
-a:link{
+
+.hobby {
+    width: 10%;
+    margin: 1%;
+    margin-left: 5%;
+    padding: 0.3%;
+    text-align: center;
+    display: inline-block;
+    border: 3px solid #F1F1F1 !important;
+    background-color: #ffffff;
+    border-radius: 15%;
+    vertical-align: top;
+}
+
+.hobbyimg {
+    width: 100%;
+    border-bottom: 1px solid blue;
+    margin:1px;
+    padding: 3%;
+}
+
+a:link {
     text-decoration: none;
     text-decoration-color: none;
 }
-p{
+
+p {
     font-size: 1.35vw !important;
 }
-h1{
+
+h1 {
     font-size: 2vw;
 }
-h2{
+
+h2 {
     font-size: 1.75vw;
 }
 
+.display-4 {
+    font-size: 3vw;
+}
+
+.lead {
+    font-size: 1vw
+}
+
+@media only screen and (max-width:500px) {
+    .container-fluid {
+        width: 100%;
+
+    }
+}
