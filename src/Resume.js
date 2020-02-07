@@ -118,7 +118,7 @@ var template_id = "portfolio";
             </li>
             <li className="nav-item px-3">
               <a
-                href="/#"
+                href="#hobbies"
                 className="navlink text-secondary"
                 style={{ textDecoration: "none" }}
               >
@@ -149,11 +149,11 @@ var template_id = "portfolio";
         >
           {/* -----------------------------------------------card------------------------------------------------------------------------------------------------------------ */}
           <div
-            className="container-fluid p-0"
+            className="container-fluid "
             style={{
               width: "60%",
-              // height: "80%",
-              marginTop: "10.5%",
+              height: "60vh",
+              marginTop: "10%",
               padding: "1px"
             }}
           >
@@ -164,12 +164,12 @@ var template_id = "portfolio";
                 backgroundImage: `url(${profilePic})`,
                 backgroundSize: "cover",
                 width: "50%",
-                height: "50vh",
+                height: "85%",
                 padding: "0px",
                 display: "inline-block",
-                // maxHeight:"10vh",
+                maxHeight:"70vh",
                 verticalAlign: "top",
-                overflow:"auto"
+                // overflow:"auto"
               }}
             >
               <img
@@ -188,7 +188,7 @@ var template_id = "portfolio";
             <div
               className="card container-fluid"
               style={{
-                height: "50vh",
+                height: "85%",
                 width: "50%",
                 paddingTop: "6%",
                 paddingLeft:"1%",
@@ -197,7 +197,7 @@ var template_id = "portfolio";
                 // backgroundColor: "white",
                 // marginTop:"6%",
                 display: "inline-block",
-                overflow:"auto"
+                // overflow:"auto"
 
               }}
             >
@@ -229,7 +229,8 @@ var template_id = "portfolio";
                 paddingBottom: "1%",
                 paddingTop: "2%",
                 paddingLeft: "25%",
-                overflow:"auto"
+                // overflow: "auto",
+                margin:"0px"
 
               }}
             >
@@ -265,8 +266,8 @@ var template_id = "portfolio";
           className="card text-center p-2 mr-auto text-secondary bg-light"
           style={{ marginTop: "11%", border: "white" }}
         >
-          <h2>Hello! I'm Rishab</h2>
-          <p>
+          <h2 className="intro m-3">Hello! I'm Rishab</h2>
+          <p className="lead text-secondary discription">
             I am Student at Indian Institute of Information Technology Kota.
             <br></br>I am currently pursuing B.Tech in Computer Science
             Engineering.<br></br>I Love to Develop Web Apps and Mobile
@@ -957,7 +958,7 @@ var template_id = "portfolio";
               </p>
             </div>
           </div>
-          {/* ---------------------------------Portfolio-------------------------------------------------------------------------------------------------- */}
+{/* -----------------------------------------Portfolio-------------------------------------------------------------------------------------------------- */}
 
           <div
             className="my-3"
@@ -1057,12 +1058,13 @@ var template_id = "portfolio";
               </p>
             </div>
           </div>
-
-          {/* ---------------------------------------------------------------------------------------------------------------------------- */}
         </div>
 
-        {/* ---------------------------------Hobbies-------------------------------------------------------------------------------------------- */}
-        <div>
+{/* -------------------------------------------------------------------------------------------------------------------------------------------- */}
+     
+
+{/* -----------------------------------------Hobbies-------------------------------------------------------------------------------------------- */}
+        <div id="hobbies">
           <h2 className="display-4 text-center m-0 p-3 card" style={{border:"2px solid #f1f1f1"}}>Hobbies</h2>
           <div className="hobbies m-0">
             <div className="card-body hobby ">
