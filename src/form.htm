@@ -1,0 +1,37 @@
+<div className="card mr-auto" style={{
+                width: "40%",
+                display: "inline-block",
+                marginLeft: "10%",
+                backgroundColor: "#F1F1F1",
+                borderRight: "2px solid white"
+              }}>
+    <form className="card-body" onSubmit={this.submitHandler}>
+        <div className="form-row" id="test">
+            <div className="form-group col-md-5">
+                <input type="text" className="form-control" placeholder="Jack Sparrow" onChange={this.onChangeHandler}
+                    name="from" value={this.state.from}></input>
+            </div>
+            <div className="form-group col-md-7">
+                <div className="input-group-prepend">
+                    <div className="input-group-text">@</div>
+                    <input type="email" className="form-control" placeholder="lucifer@microsoft.com"
+                        onChange={this.onChangeHandler} name="from_email" value={this.state.from_email}></input>
+                </div>
+            </div>
+        </div>
+        <div className="form-group">
+            <div className="input-group-prepend">
+                <div className="input-group-text">Subject</div>
+                <input type="text" className="form-control" placeholder="Build A WebApp" onChange={this.onChangeHandler}
+                    name="subject" value={this.state.subject}></input>
+            </div>
+        </div>
+        <div className="form-group">
+            <textarea className="form-control" rows="8" placeholder="Message" onChange={this.onChangeHandler}
+                name="message" value={this.state.message}></textarea>
+        </div>
+        <div className="form-group">
+            <input type="submit" className="btn btn-dark form-control" value="Submit"></input>
+        </div>
+    </form>
+</div>
