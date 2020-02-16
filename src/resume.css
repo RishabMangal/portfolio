@@ -199,16 +199,19 @@ h2 {
         opacity: 0;
         padding-left: 15%;
         padding-top: 0%;
+        background-color: #29377A50;
     }
 
     100% {
         position: absolute;
-        top: 80%;
+        top: 71.5%;
         height: 9%;
         width: 60%;
-        opacity: 0.25;
+        opacity: 0.8;
         padding-left: 15%;
         padding-top: 1%;
+        background-color: #29377A;
+
 
     }
 }
