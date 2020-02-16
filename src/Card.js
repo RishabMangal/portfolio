@@ -24,6 +24,7 @@ function Card(props) {
                         display: "inline-block",
                         maxHeight: "70vh",
                         verticalAlign: "top",
+                        animation:"slideright 2s"
                         // overflow:"auto"
                     }}
                 >
@@ -52,6 +53,7 @@ function Card(props) {
                         // backgroundColor: "white",
                         // marginTop:"6%",
                         display: "inline-block",
+                        animation: "slideleft 2s"
                         // overflow:"auto"
 
                     }}
@@ -85,7 +87,8 @@ function Card(props) {
                         paddingTop: "2%",
                         paddingLeft: "25%",
                         // overflow: "auto",
-                        margin: "0px"
+                        margin: "0px",
+                        animation: "slideup 2s"
 
                     }}
                 >

@@ -17,14 +17,8 @@ class Resume extends Component {
         <Navbar></Navbar>
         <div
           id="home"
-          className="container-fluid"
-          style={{
-            backgroundImage: `url(${cover})`,
-            backgroundSize: "cover",
-            width: "100%",
-            height: "35vw ",
-            padding: "1px"
-          }}
+          className="container-fluid cover"
+          style={{  backgroundImage: `url(${cover})`}}
         >
           <Card profilePics={profilePic}></Card>
         </div>
