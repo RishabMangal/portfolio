@@ -21,7 +21,6 @@ function Hobbies() {
                     <Hobby icon={cooking} hobby="Cooking"></Hobby>
                 </div>
             </div>
-
         </div>
     )
 }
