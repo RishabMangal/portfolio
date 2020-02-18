@@ -121,10 +121,10 @@ function Education() {
                     >
                         <p className="text-justify lead text-left">
                             Good Shephred Sr. Secondary School
-              </p>
+                        </p>
                         <p className="text-secondary text-left font-weight-light">
                             I Have completed my Schooling from RBSE.
-              </p>
+                        </p>
                     </span>
                 </div>
                 </div>

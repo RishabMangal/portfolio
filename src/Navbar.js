@@ -6,13 +6,13 @@ function Navbar() {
             <div
                 className="header navbar navbar-expand-sm fixed-top mr-auto "
                 role="navigation"
-                style={{ backgroundColor: "#f1f1f100" }}
+                style={{ backgroundColor: "#11111120" }}
             >
                 <h4
                     className="navbar-brand text-secondary lead font-weight-normal nav-link"
                     style={{ fontFamily: "comic sans ms", fontSize: "1.35vw" }}
                 >
-                    <a href="/" className="text-secondary">
+                    <a href="#home" className="text-secondary">
                         Rishab Mangal
             </a>
                 </h4>

@@ -19,8 +19,7 @@ import unity from "./logo/unity.jpg";
 import './resume.css'
 function Skills(props) {
     return (
-        <div>
-            <div className="card text-center my-5" id="skills">
+            <div className="card text-center my-5 p-0" id="skills">
                 <h2
                     className="display-4 p-3 card text-light"
                     style={{
@@ -30,34 +29,34 @@ function Skills(props) {
                     }}
                 >
                     Skills
-          </h2>
+                </h2>
                 <div
                     className=""
                     style={{
                         margin: "0px",
-                        backgroundColor: "rgb(41, 55, 122)"
+                        backgroundColor: "rgb(41, 55, 122)",
+                        padding:"0%"
                         // width: "100%"
                     }}
                 >
-                    <Skill skillimg={html} name="HTML" level="Intermidiate"></Skill>
-                    <Skill skillimg={css} name="CSS" level="Intermidiate"></Skill>
-                    <Skill skillimg={js} name="JavaScript" level="Intermidiate"></Skill>
-                    <Skill skillimg={node} name="NodeJS" level="Begginer"></Skill>
-                    <Skill skillimg={react} name="ReactJS" level="Intermidiate"></Skill>
-                    <Skill skillimg={redux} name="ReduxJS" level="Begginer"></Skill>
-                    <Skill skillimg={jquery} name="jQueryJS" level="Begginer"></Skill>
-                    <Skill skillimg={php} name="Php" level="Begginer"></Skill>
-                    <Skill skillimg={mysql} name="MySQL" level="Begginer"></Skill>
-                    <Skill skillimg={mongo} name="MongoDB" level="Begginer"></Skill>
-                    <Skill skillimg={bootstrap} name="BootStrap" level="Intermidiate"></Skill>
-                    <Skill skillimg={c} name="C" level="Intermidiate"></Skill>
-                    <Skill skillimg={cpp} name="C++" level="Intermidiate"></Skill>
-                    <Skill skillimg={java} name="Java" level="Begginer"></Skill>
-                    <Skill skillimg={python} name="Python" level="Begginer"></Skill>
-                    <Skill skillimg={unity} name="Unity" level="Begginer"></Skill>
+                <Skill skillimg={html} name="HTML" level="Intermidiate" animation= "threeD1 5s linear infinite"></Skill>
+                <Skill skillimg={css} name="CSS" level="Intermidiate" animation="threeD2 5s linear infinite"></Skill>
+                <Skill skillimg={js} name="JavaScript" level="Intermidiate" animation="threeD3 5s linear infinite"></Skill>
+                <Skill skillimg={node} name="NodeJS" level="Beginner" animation="threeD3 10s linear infinite"></Skill>
+                <Skill skillimg={react} name="ReactJS" level="Intermidiate" animation="rotate 2.5s linear infinite"></Skill>
+                <Skill skillimg={redux} name="ReduxJS" level="Beginner" animation="threeD1 5s linear infinite"></Skill>
+                <Skill skillimg={jquery} name="jQueryJS" level="Beginner" animation="threeD1 5s linear infinite"></Skill>
+                <Skill skillimg={php} name="Php" level="Beginner" animation="threeD2 5s linear infinite"></Skill>
+                <Skill skillimg={mysql} name="MySQL" level="Beginner" animation="threeD3 5s linear infinite"></Skill>
+                <Skill skillimg={mongo} name="MongoDB" level="Beginner" animation="threeD3 5s linear infinite"></Skill>
+                <Skill skillimg={bootstrap} name="BootStrap" level="Intermidiate" animation="threeD2 5s linear infinite"></Skill>
+                <Skill skillimg={c} name="C" level="Intermidiate" animation="threeD1 5s linear infinite"></Skill>
+                <Skill skillimg={cpp} name="C++" level="Intermidiate" animation="threeD1 5s linear infinite"></Skill>
+                <Skill skillimg={java} name="Java" level="Beginner" animation="threeD2 5s linear infinite"></Skill>
+                <Skill skillimg={python} name="Python" level="Beginner" animation="threeD3 5s linear infinite"></Skill>
+                <Skill skillimg={unity} name="Unity" level="Beginner" animation="threeD3 5s linear infinite"></Skill>
                 </div>
             </div>
-        </div>
     )
 }
 
