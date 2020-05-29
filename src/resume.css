@@ -54,9 +54,9 @@ div {
 }
 
 .main-card-body {
-    padding-top: 6%;
-    padding-left: 1%;
-    padding-right: 1%;
+    /* padding-top: 6%; */
+    /* padding-left: 1%; */
+    /* padding-right: 1%; */
     animation: slideleft 2s;
 }
 
@@ -104,13 +104,12 @@ div {
     padding: 0%;
 }
 
-.skillimg:hover {
+/* .skillimg:hover {
     /* padding: 0%; */
-}
 
-.skillimgdiv:hover {
+
+/* .skillimgdiv:hover { */
     /* padding: 0%; */
-}
 
 .hobby {
     width: 10%;
@@ -170,6 +169,7 @@ div {
 
 .info {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
 
 }
 
@@ -215,14 +215,15 @@ h2 {
 
 
 .project-cover {
-    width: 70%;
+    width: 50%;
+    max-height: max-content;
     background-color: #e6e6e6;
     margin-top: 1%;
     border: 2px solid #29377A;
     margin-left: 15%;
     /* margin-right: 15%; */
     border-radius: 50px;
-    overflow: auto;
+    /* overflow: auto; */
     /* padding: 0.0625%; */
     /* display: inline-block; */
 }
@@ -232,15 +233,9 @@ h2 {
 }
 
 .project-img {
-    width: 100%;
+    /* width: 100%; */
     margin: 0%;
     float: left;
-
-    /* border-right: 1px dashed rgb(22, 18, 18); */
-    /* border-radius: 10px; */
-    /* border-top-left-radius: 11%; */
-    /* border-bottom-left-radius: 11%; */
-    /* margin-top: 0.2%; */
 }
 
 .project-body {

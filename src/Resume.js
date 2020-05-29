@@ -18,7 +18,7 @@ class Resume extends Component {
         <div
           id="home"
           className="container-fluid cover"
-          style={{  backgroundImage: `url(${cover})`}}
+          style={{ backgroundImage: `url(${cover})`, backgroundPosition: "center", backgroundAttachment: "fixed",backdropFilter:"2" }}
         >
           <Card profilePics={profilePic}></Card>
         </div>

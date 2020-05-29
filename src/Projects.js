@@ -6,6 +6,7 @@ import contactmanager from './logo/contactmanager.png'
 import feed from './logo/feed.jpg'
 import './resume.css'
 import Project from './Project';
+// import Protest from './Protest';
 function Projects() {
     const projects = [
         {
@@ -55,6 +56,7 @@ function Projects() {
                 </h2>
                 {projects.map((i, x) => { return (<Project key={x} data={i}></Project>) })}
             </div>
+            {/* <Protest data={projects[0]}></Protest> */}
         </div>
     )
 }

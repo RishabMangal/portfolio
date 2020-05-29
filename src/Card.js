@@ -9,12 +9,14 @@ function Card (props) {
           style={{
             backgroundImage: `url(${props.profilePics})`,
             backgroundSize: 'cover',
-            maxHeight: '70vh',
-            animation: 'slideright 2s'
+            minHeight: '30vh',
+            animation: 'slideright 2s',
+            backgroundPosition: "center",
+            filter:"grayscale(100%) drop-shadow(8px 8px 10px gray)"
           }}
         ></div>
         <div className='card container-fluid col-sm-6 main-card-body'>
-          <ul className='bg-light'>
+          <ul className='' style={{padding:"2%",paddingTop: "8%",paddingBottom:"7%",margin:0}}>
             <li className='text-dark text-center lead font-weight-bold'>
               Rishab Mangal
             </li>

@@ -106,17 +106,20 @@ class Contact extends Component {
             >
               <form className='card-body' onSubmit={this.submitHandler}>
                 <div className='form-row' id='test'>
-                  <div className='form-group col-md-5'>
-                    <input
-                      type='text'
-                      className='form-control'
-                      placeholder='Jack Sparrow'
-                      onChange={this.onChangeHandler}
-                      name='from'
-                      value={this.state.from}
-                    ></input>
+                  <div className='form-group col-sm-6'>
+                    <div className='input-group-prepend'>
+                      <div className='input-group-text'><i className="fas fa-user-ninja text-dark lead "></i></div>
+                        <input
+                          type='text'
+                          className='form-control'
+                          placeholder='Jack Sparrow'
+                          onChange={this.onChangeHandler}
+                          name='from'
+                          value={this.state.from}
+                        ></input>
+                      </div>
                   </div>
-                  <div className='form-group col-md-7'>
+                  <div className='form-group col-sm-6'>
                     <div className='input-group-prepend'>
                       <div className='input-group-text'>@</div>
                       <input
@@ -157,7 +160,7 @@ class Contact extends Component {
                   <input
                     type='submit'
                     className='btn btn-dark form-control'
-                    value='Submit'
+                    value='Send'
                   ></input>
                 </div>
               </form>
