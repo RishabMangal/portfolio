@@ -1,12 +1,12 @@
 import React from 'react'
 import './resume.css'
-function Navbar () {
+function Navbar() {
   return (
     <div>
       <div
         className='header navbar navbar-expand-sm fixed-top mr-auto '
         role='navigation'
-        style={{ backgroundColor: '#11111120' }}
+        style={{ backgroundColor: '#11111130' }}
       >
         <h4
           className='navbar-brand text-secondary lead font-weight-normal nav-link'
@@ -16,9 +16,13 @@ function Navbar () {
             Rishab Mangal
           </a>
         </h4>
-        <ul
+        <div className=""
+          style={{
+            position: 'absolute',
+            right: "10px"
+          }}>
+          <ul
           className='navbar-nav mr-auto m-1'
-          style={{ position: 'absolute', right: '0px' }}
         >
           <li className='nav-item px-3'>
             <a
@@ -65,8 +69,12 @@ function Navbar () {
               Contact
             </a>
           </li>
+          <li>
+            <a href="https://rishus-apis.herokuapp.com/mycv" className="navlink"><button className="btn download">Download CV</button></a>
+          </li>
         </ul>
-      </div>
+        </div>
+        </div>
     </div>
   )
 }

@@ -31,6 +31,17 @@ img:hover {
     filter: drop-shadow(6px 6px 8px rgb(0, 140, 255)) !important;
 }
 
+.download{
+    border: 2px solid black;
+    /* background-color: #00000050; */
+    color: gray;
+}
+.download:hover{
+    border: 2px solid green;
+    background-color: #00000050;
+    color: white;
+}
+
 .check:hover {
     background-color: black;
 }
