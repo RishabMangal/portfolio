@@ -6,7 +6,6 @@ li {
     padding: 2px;
     padding-left: 8%;
     font-size: 1.05vw;
-
 }
 
 h2 {
@@ -26,18 +25,22 @@ i {
 }
 
 i:hover {
-    color: aqua;
+    color: rgba(0, 255, 255);
 }
 
+img:hover{
+    padding: 2px;
+    filter: drop-shadow(6px 6px 8px rgb(0, 140, 255)) !important;
+}
+
+.check:hover{
+    background-color: black;
+}
 
 .test {
     text-decoration: none;
 }
 
-div {
-    border: #f1f1f1 !important;
-    /* font-size: 1.35vw; */
-}
 
 .cover {
     background-size: cover;
@@ -89,7 +92,7 @@ div {
 
 .skill:hover {
     background-color: rgb(56, 81, 204);
-    /* animation: threeD 10s */
+    /* animation: icon-3d 10s */
 }
 
 .skillimgdiv {
@@ -213,6 +216,11 @@ h2 {
     font-size: 1vw
 }
 
+.project{
+    border: 2px solid black;
+    border-radius: 10px;
+    animation: disco 10s linear infinite;
+}
 
 .project-cover {
     width: 50%;
@@ -235,7 +243,7 @@ h2 {
 .project-img {
     /* width: 100%; */
     margin: 0%;
-    float: left;
+
 }
 
 .project-body {
@@ -251,9 +259,17 @@ h2 {
 
 }
 
-.lik {
-    display: block;
+.label{
     font-size: 1.35vw;
+    color: rgb(102, 20, 235);
+    font-weight: 350;
+    font-style: oblique;
+}
+
+.lik {
+    /* display: block; */
+    font-size: 1.35vw;
+    animation: threeD 5s linear infinite;
 }
 
 .tech-logo {
@@ -388,6 +404,31 @@ h2 {
 
     100% {
         right: 10%;
+    }
+}
+
+@keyframes disco{
+    0%{
+        /* background-color: red; */
+        border: 2px solid red;
+        /* border-color: red; */
+    }
+    25%{
+        /* background-color: blue; */
+    border: 2px solid blue;
+    /* border-color: blue; */
+    }
+    50%{
+    border: 2px solid rgb(0, 204, 10);
+
+        /* background-color: yellow; */
+        /* border-color: yellow; */
+    }
+    100%{
+        /* background-color: purple; */
+    border: 2px solid purple;
+
+        /* border-color:purple; */
     }
 }
 
@@ -549,3 +590,36 @@ div {
         transform: rotateX(45deg);
     }
 }
+
+
+
+
+.icon-3d {
+    padding: 10px;
+    -webkit-animation: icon3d 200ms 10;
+    animation: icon3d 200ms 10;
+    color: #fff;
+  }
+
+.icon-3d:hover {
+    -webkit-animation: icon3d 200ms infinite;
+          animation: icon3d 200ms infinite;
+  }
+  
+  @keyframes icon3d {
+    0% {
+      text-shadow: 5px 4px rgba(244,67,54,1), -5px -6px rgba(33,150,243,1);
+    }
+    25% {
+      text-shadow: -5px -6px rgba(244,67,54,1), 5px 4px rgba(33,150,243,1);
+    }
+    50% {
+      text-shadow: 5px -4px rgba(244,67,54,1), -8px 4px rgba(33,150,243,1);
+    }
+    75% {
+      text-shadow: -8px -4px rgba(244,67,54,1), -5px -4px rgba(33,150,243,1);
+    }
+    100% {
+      text-shadow: -5px 0 rgba(244,67,54,1), 5px -4px rgba(33,150,243,1);
+    }
+  }

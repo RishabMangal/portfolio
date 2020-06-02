@@ -13,7 +13,7 @@ import Contact from "./Contact";
 class Resume extends Component {
   render() {
     return (
-      <div style={{ padding: "0px", margin: "0px" }}>
+      <div style={{ padding: "0px", margin: "0px",overflowX:"hidden" }}>
         <Navbar></Navbar>
         <div
           id="home"

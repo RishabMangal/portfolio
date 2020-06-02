@@ -1,7 +1,9 @@
 import React from 'react'
-import portfolio from './logo/portfolio.png'
+import portfolio from './logo/portfolio.png';
+import backmeup from './logo/backmeup.png'
+import gitscard from './logo/gitscard.png';
 import mongodb from "./logo/mongodb.png";
-import todo from "./logo/todo.jpg"
+import todo from "./logo/todo.png";  
 import contactmanager from './logo/contactmanager.png'
 import feed from './logo/feed.jpg'
 import './resume.css'
@@ -9,6 +11,26 @@ import Project from './Project';
 // import Protest from './Protest';
 function Projects() {
     const projects = [
+        {
+            title: "BackMeUp",
+            link: "https://backmeup.netlify.app/",
+            image: backmeup,
+            tagline: "A simple App to Store all your contacts list, todo list and account.",
+            tech: ["fab fa-html5 px-2 mr-2 font-weight-light", "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light", "fab fa-js-square px-2 mr-2 text-warning font-weight-light", "fab fa-node px-2 mr-2 text-success font-weight-light"],
+            logo: mongodb,
+            // animationr: "slider 2s infinite ",
+            // animationl: "slidel 5s infinite "
+        },
+        {
+            title: "Github Cards",
+            link: "https://tooo-dooo.herokuapp.com/",
+            image: gitscard,
+            tagline: "Enter Github Handle and get Github Profile",
+            tech: ["fab fa-html5 px-2 mr-2 font-weight-light", "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light", "fab fa-js-square px-2 mr-2 text-warning font-weight-light", "fab fa-node px-2 mr-2 text-success font-weight-light"],
+            logo: null,
+            // animationr: "slider 2s infinite ",
+            // animationl: "slidel 5s infinite "
+        },
         {
             title: "TO-DO App",
             link: "https://tooo-dooo.herokuapp.com/",
@@ -54,7 +76,15 @@ function Projects() {
                 >
                     Projects
                 </h2>
-                {projects.map((i, x) => { return (<Project key={x} data={i}></Project>) })}
+                <div className="">
+                    {projects.map((i, x) => {
+                        return (
+                            <div className="mx-4 m-4 p-2 project" key={x}>
+                                <Project data={i}></Project>
+                            </div>
+                            )
+                    })}
+                </div>
             </div>
             {/* <Protest data={projects[0]}></Protest> */}
         </div>
