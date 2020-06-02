@@ -12,7 +12,7 @@ function Card (props) {
             minHeight: '30vh',
             animation: 'slideright 2s',
             backgroundPosition: "center",
-            filter:"grayscale(100%) drop-shadow(8px 8px 10px gray)"
+            filter:"grayscale(100%)"
           }}
         ></div>
         <div className='card container-fluid col-sm-6 main-card-body'>

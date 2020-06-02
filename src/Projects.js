@@ -76,10 +76,10 @@ function Projects() {
                 >
                     Projects
                 </h2>
-                <div className="">
+                <div className="" style={{marginRight:"3%",marginLeft:"3%"}}>
                     {projects.map((i, x) => {
                         return (
-                            <div className="mx-4 m-4 p-2 project" key={x}>
+                            <div className="p-2 project" key={x}>
                                 <Project data={i}></Project>
                             </div>
                             )

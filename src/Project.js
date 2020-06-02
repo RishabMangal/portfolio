@@ -19,7 +19,7 @@ function Project(props) {
         </div>
       </div>
       <div
-        className="col-sm-6 mr-0"
+        className="col-sm-6 mr-0 project-info"
       >
         <div className="p-4">
           <div className="display-4 text-center m-4">{props.data.title}</div>

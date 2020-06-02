@@ -52,13 +52,12 @@ class Contact extends Component {
   }
   render () {
     return (
-      <div>
+      <div style={{backgroundColor:"black"}}>
         <div id='contact'>
           <h2
-            className='display-4 p-3 card text-dark text-center'
+            className='display-4 p-3 text-light text-center'
             style={{
-              backgroundColor: '#F1F1F1',
-              borderBottom: '1px solid white',
+              borderBottom: '1px dotted gray',
               marginTop: '1%',
               marginBottom: '2%',
             }}
@@ -167,40 +166,29 @@ class Contact extends Component {
             </div>
           )}
           <div
-            className='card p-3 col-sm-5 offset-sm-1 p-1 contact-card'
+            className='p-3 col-sm-5 offset-sm-1 p-1 contact-card'
           >
             <ul className='card-body'>
-              <li className='text-dark text-center lead font-weight-bold'>
+              <li className='text-center lead font-weight-bold'>
                 Rishab Mangal
               </li>
-              <li className='text-secondary font-weight-bold text-center'>
+              <li className='font-weight-bold lead text-center'>
                 Software Engineer
               </li>
-              <li className='text-dark'>Phone:</li>
+              <li>Phone:</li>
               <li className='text-secondary' style={{ paddingTop: '0px' }}>
                 9928799243
               </li>
-              <li className='text-dark'>Email:</li>
+              <li>Email:</li>
               <li className='text-secondary'>rishabhmangal1@gmail.com</li>
-              <li className='text-dark'>Address:</li>
-              <li className='text-secondary'>Mnit Japiur</li>
-              <li className='text-dark'>Birthday:</li>
-              <li className='text-secondary'>20th Oct 1999</li>
-            </ul>
+              <li >Address:</li>
+              <li className='text-secondary'>Ganga Hostel | MNIT Japiur | Rajasthan | India</li>
+            <li>
             <div
-              className='container-fluid text-dark'
-              style={{
-                backgroundColor: '#000000',
-                display: 'inline-block',
-                paddingBottom: '1%',
-                paddingTop: '2%',
-                paddingLeft: '25%',
-                borderTop: '1px solid white',
-                borderLeft: '1px solid white'
-              }}
+              className='social'
             >
               <a href='mailto:rishabhmangal1@gmail.com?subject=Awesome App'>
-                <i className='fas fa-envelope px-3 mr-auto'></i>
+                <i className='fas fa-envelope px-3 mr-auto '></i>
               </a>
               <a href='https://www.linkedin.com/in/rishab-m-00b60a103/'>
                 <i className='fab fa-linkedin px-3 mr-auto'></i>
@@ -220,7 +208,9 @@ class Contact extends Component {
               <a href='https://www.github.com'>
                 <i className='fab fa-google-plus px-3 mr-auto'></i>
               </a>
-            </div>
+                </div>
+                </li>
+              </ul>
         </div>
         <div className="col"></div>        
         </div>
