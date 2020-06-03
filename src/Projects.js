@@ -33,7 +33,7 @@ function Projects() {
         },
         {
             title: "Portfolio",
-            link: "https://rishabmangal.netlify.com",
+            link: "https://rishabmangal.netlify.app",
             image: portfolio,
             tagline: "A simple App to Showcase my CV and Skills.",
             tech: ["fab fa-html5 px-2 mr-2 font-weight-light", "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light", "fab fa-js-square px-2 mr-2 text-warning font-weight-light", "fab fa-node px-2 mr-2 text-success font-weight-light"],

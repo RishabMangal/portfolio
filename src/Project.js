@@ -13,14 +13,15 @@ function Project(props) {
               src={props.data.image}
               alt="project-snapshot"
               className="project-image"
-              style={{ width: "100%",filter:"drop-shadow(8px 8px 10px gray)" }}
+              style={{
+                width: "100%",
+                filter: "drop-shadow(8px 8px 10px gray)",
+              }}
             ></img>
           </a>
         </div>
       </div>
-      <div
-        className="col-sm-6 mr-0 project-info"
-      >
+      <div className="col-sm-6 mr-0 project-info">
         <div className="p-4">
           <div className="display-4 text-center m-4">{props.data.title}</div>
           <p
@@ -53,13 +54,13 @@ function Project(props) {
                 className="tech-logo lik"
               ></img>
             ) : null}
-        </div>
-                  <a href={props.data.link}>
-                      <button className="btn btn-primary check float-right">
-                          Check this Out
-                           <i className="fas fa-bomb fa-1x mx-2 icon-3d "></i>
-                        </button>   
-                    </a>
+          </div>
+          <a href={props.data.link} target="blank">
+            <button className="btn btn-primary check float-right">
+              Check this Out
+              <i className="fas fa-bomb fa-1x mx-2 icon-3d "></i>
+            </button>
+          </a>
         </div>
       </div>
     </div>
