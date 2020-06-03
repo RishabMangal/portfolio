@@ -72,7 +72,7 @@ class Contact extends Component {
             >
               <div
                 style={{
-                  backgroundColor: '#F1F1F1',
+                  backgroundColor: '#F1F1F150',
                   margin: '3%',
                   padding: '6%',
                   width: '30%',
@@ -85,7 +85,7 @@ class Contact extends Component {
               <div
                 className='lead'
                 style={{
-                  backgroundColor: '#F1F1F1',
+                  backgroundColor: '#F1F1F150',
                   padding: '5%',
                   width: '30%',
                   marginLeft: '35%',
@@ -101,13 +101,13 @@ class Contact extends Component {
             </div>
           ) : (
             <div
-            className='card mr-auto offset-sm-1 col-sm-4 p-1 contact-form'
+            className='mr-auto col-sm-4 p-1 contact-form'
             >
-              <form className='card-body' onSubmit={this.submitHandler}>
+              <form className='contact-form-body' onSubmit={this.submitHandler}>
                 <div className='form-row' id='test'>
                   <div className='form-group col-sm-6'>
                     <div className='input-group-prepend'>
-                      <div className='input-group-text'><i className="fas fa-user-ninja text-dark lead "></i></div>
+                      <div className='input-group-text'><span className="fas fa-user-ninja text-primary "></span></div>
                         <input
                           type='text'
                           className='form-control'
@@ -120,7 +120,7 @@ class Contact extends Component {
                   </div>
                   <div className='form-group col-sm-6'>
                     <div className='input-group-prepend'>
-                      <div className='input-group-text'>@</div>
+                      <div className='input-group-text text-primary'>@</div>
                       <input
                         type='email'
                         className='form-control'
@@ -134,7 +134,7 @@ class Contact extends Component {
                 </div>
                 <div className='form-group'>
                   <div className='input-group-prepend'>
-                    <div className='input-group-text'>Subject</div>
+                    <div className='input-group-text text-primary'>Subject</div>
                     <input
                       type='text'
                       className='form-control'
@@ -166,7 +166,7 @@ class Contact extends Component {
             </div>
           )}
           <div
-            className='p-3 col-sm-5 offset-sm-1 p-1 contact-card'
+            className='p-3 col-sm-5 p-1 contact-card'
           >
             <ul className='card-body'>
               <li className='text-center lead font-weight-bold'>
@@ -211,8 +211,7 @@ class Contact extends Component {
                 </div>
                 </li>
               </ul>
-        </div>
-        <div className="col"></div>        
+        </div>  
         </div>
       </div>
     )
