@@ -107,7 +107,7 @@ class Contact extends Component {
                 <div className='form-row' id='test'>
                   <div className='form-group col-sm-6'>
                     <div className='input-group-prepend'>
-                      <div className='input-group-text'><span className="fas fa-user-ninja text-primary "></span></div>
+                      <div className='input-group-text'><i className="fas fa-user-ninja text-primary fa-1x" style={{animation:"none"}}></i></div>
                         <input
                           type='text'
                           className='form-control'

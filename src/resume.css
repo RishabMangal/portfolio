@@ -219,6 +219,7 @@ h2 {
     background-color: #222;
     padding: 1% !important;
     margin-left: 10%;
+    margin-right: 10% !important;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgb(167, 167, 167);
     border-radius: 20px;
 
@@ -227,7 +228,7 @@ h2 {
 .contact-card {
     color: #e6e6e6;
     border-left: 1px solid gray;
-    margin-right: 10%;
+    margin: auto;
     padding: 2%;
 }
 
