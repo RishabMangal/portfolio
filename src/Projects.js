@@ -23,13 +23,21 @@ function Projects() {
         },
         {
             title: "Github Cards",
-            link: "https://tooo-dooo.herokuapp.com/",
+            link: "https://gitscard.netlify.app/",
             image: gitscard,
             tagline: "Enter Github Handle and get Github Profile",
             tech: ["fab fa-html5 px-2 mr-2 font-weight-light", "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light", "fab fa-js-square px-2 mr-2 text-warning font-weight-light", "fab fa-node px-2 mr-2 text-success font-weight-light"],
             logo: null,
             // animationr: "slider 2s infinite ",
             // animationl: "slidel 5s infinite "
+        },
+        {
+            title: "Portfolio",
+            link: "https://rishabmangal.netlify.com",
+            image: portfolio,
+            tagline: "A simple App to Showcase my CV and Skills.",
+            tech: ["fab fa-html5 px-2 mr-2 font-weight-light", "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light", "fab fa-js-square px-2 mr-2 text-warning font-weight-light", "fab fa-node px-2 mr-2 text-success font-weight-light"],
+            logo: null
         },
         {
             title: "TO-DO App",
@@ -51,12 +59,12 @@ function Projects() {
             // animationl: "slidel 2s infinite "
         },
         {
-            title: "Portfolio",
-            link: "https://rishabmangal.netlify.com",
-            image: portfolio,
-            tagline: "A simple App to Showcase my CV and Skills.",
+            title: "Drawing App",
+            link: "https://github.com/RishabMangal/Drawing_App",
+            image: feed,
+            tagline:"A simple Drawing App where a Canvas is shared between Single Host and multiple Clients.",
             tech: ["fab fa-html5 px-2 mr-2 font-weight-light", "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light", "fab fa-js-square px-2 mr-2 text-warning font-weight-light", "fab fa-node px-2 mr-2 text-success font-weight-light"],
-            logo: null
+            logo:mongodb
         },
         {
             title: "Feedback Software",
