@@ -35,7 +35,7 @@ function Card (props) {
             <li className='text-secondary'>20th Oct 1999</li>
           </ul>
         </div>
-        <div className='container-fluid card-footer'>
+        <div className='container-fluid card-footerr'>
           <a href='mailto:rishabhmangal1@gmail.com?subject=Awesome App'>
             <i className='fas fa-envelope px-3 mr-auto'></i>
           </a>

@@ -48,7 +48,7 @@ h1 {
 
 h2 {
     font-size: 33px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 4px 0 rgba(92, 91, 91, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .display-4 {
@@ -96,19 +96,40 @@ h2 {
     animation: slideleft 2s;
 }
 
-.card-footer {
+.card-footerr {
     background-color: rgb(14, 24, 66);
     padding-bottom: 1%;
     padding-top: 2%;
-    padding-left: 35%;
-    overflow: hidden;
     animation: slideup 1.9s;
-}
-
-.card-footer i {
-    filter: drop-shadow(2px 2px 6px rgb(108, 184, 255));
+    margin-bottom: 20%;
     text-align: center;
 }
+
+.card-footerr i {
+    filter: drop-shadow(2px 2px 6px rgb(108, 184, 255));
+}
+
+
+
+
+
+.info {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 13%;
+}
+
+.intro {
+    font-size: 38px;
+    margin-top: 5%;
+}
+
+.discription {
+    margin: 1%;
+    margin-bottom: 5%;
+    page-break-after: auto;
+    padding: 10px;
+}
+
 
 
 
@@ -245,22 +266,6 @@ h2 {
 }
 
 
-
-.info {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    position: relative;
-}
-
-.intro {
-    font-size: 38px;
-    margin-top: 5%;
-}
-
-.discription {
-    margin-bottom: auto;
-    margin: 1%;
-    margin-bottom: 5%;
-}
 
 .lead {
     font-size: 19px
