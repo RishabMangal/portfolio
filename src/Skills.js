@@ -16,7 +16,6 @@ import cpp from "./logo/cpp.png";
 import java from "./logo/java.png";
 import python from "./logo/python.jpg";
 import unity from "./logo/unity.jpg";
-import "./resume.css";
 function Skills(props) {
   const skills = [
     {
@@ -121,7 +120,7 @@ function Skills(props) {
       <h2 className="display-4 skills-header">Skills</h2>
       <div className="row">
         {skills.map((d, i) => (
-          <div className="col-sm-3 mr-0">
+          <div className="col-sm-3 mr-0" key={i}>
             <Skill
               skillimg={d.skillimg}
               name={d.name}

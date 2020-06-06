@@ -1,5 +1,4 @@
 import React from "react";
-import "./resume.css";
 
 function Navbar() {
   return (

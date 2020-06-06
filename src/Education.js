@@ -4,8 +4,7 @@ function Education () {
   return (
     <div>
       <div className='card text-center p-2 my-5' id='education'>
-        <h2 className='display-4 p-3 my-3 card'>Education</h2>
-
+        <h2 className='display-4 p-3 my-3'>Education</h2>
         <div className=''>
           <span
             className='p-3 mr-auto'

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import "./resume.css";
-import profilePic from "./profile.jpg";
-import cover from "./cover.jpg";
+import profilePic from "./logo/profile.jpg";
+import cover from "./logo/cover.jpg";
 import Skills from "./Skills";
 import Intro from "./Intro";
 import Education from "./Education";
@@ -10,6 +9,7 @@ import Navbar from "./Navbar";
 import Projects from "./Projects";
 import Hobbies from "./Hobbies";
 import Contact from "./Contact";
+import Courses from "./Courses";
 class Resume extends Component {
   render() {
     return (
@@ -25,6 +25,7 @@ class Resume extends Component {
         <Intro></Intro>
         <Education></Education>
         <Skills></Skills>
+        <Courses></Courses>
         <Projects></Projects>
         <Hobbies></Hobbies>
         <Contact></Contact>

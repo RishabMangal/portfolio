@@ -1,5 +1,4 @@
 import React from 'react'
-import './resume.css'
 function Hobby(props) {
     return (
         <div className="card-body hobby ">

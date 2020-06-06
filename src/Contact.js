@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import emailjs from 'emailjs-com'
 import Loader from 'react-loader-spinner'
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
-import './resume.css'
+// import './resume.css'
 class Contact extends Component {
   state = {
     from: '',
