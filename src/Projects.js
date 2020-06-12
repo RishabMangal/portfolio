@@ -6,6 +6,7 @@ import mongodb from "./logo/mongodb.png";
 import todo from "./logo/todo.png";
 import contactmanager from "./logo/contactmanager.png";
 import feed from "./logo/feed.jpg";
+import covid from './logo/covid.png';
 import Project from "./Project";
 
 function Projects() {
@@ -66,6 +67,21 @@ function Projects() {
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
       logo: mongodb,
+      // animationr: "slider 2s infinite ",
+      // animationl: "slidel 5s infinite "
+    },
+    {
+      title: "Covid-19 Tracker",
+      link: "https://covid19-trackit.netlify.app/",
+      image: covid,
+      tagline: "A simple React App to Track Number of Corona Victims Globally.",
+      tech: [
+        "fab fa-html5 px-2 mr-2 font-weight-light",
+        "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
+        "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
+        "fab fa-node px-2 mr-2 text-success font-weight-light",
+      ],
+      logo: null,
       // animationr: "slider 2s infinite ",
       // animationl: "slidel 5s infinite "
     },
