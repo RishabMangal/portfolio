@@ -30,7 +30,7 @@ function Card (props) {
             <li className='text-dark'>Email:</li>
             <li className='text-secondary'>rishabhmangal1@gmail.com</li>
             <li className='text-dark'>Address:</li>
-            <li className='text-secondary'>Mnit Japiur</li>
+            <li className='text-secondary'>Ganga Hostel | MNIT Japiur | Rajasthan | India</li>
             <li className='text-dark'>Birthday:</li>
             <li className='text-secondary'>20th Oct 1999</li>
           </ul>
@@ -42,7 +42,7 @@ function Card (props) {
           <a href='https://www.linkedin.com/in/rishab-m-00b60a103/'>
             <i className='fab fa-linkedin px-3 mr-auto'></i>
           </a>
-          <a href='https://api.whatsapp.com/send?phone=9928799243&text=Hello'>
+          <a href='https://api.whatsapp.com/send?phone=+919928799243&text=Hello'>
             <i className='fab fa-whatsapp px-3 mr-auto'></i>
           </a>
           <a href='https://www.facebook.com/rishabh.mangal.77'>

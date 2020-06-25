@@ -193,7 +193,7 @@ class Contact extends Component {
               <a href='https://www.linkedin.com/in/rishab-m-00b60a103/'>
                 <i className='fab fa-linkedin px-3 mr-auto'></i>
               </a>
-              <a href='https://api.whatsapp.com/send?phone=9928799243&text=Hello'>
+              <a href='https://api.whatsapp.com/send?phone=+919928799243&text=Hello'>
                 <i className='fab fa-whatsapp px-3 mr-auto'></i>
               </a>
               <a href='https://www.facebook.com/rishabh.mangal.77'>
