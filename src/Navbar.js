@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div>
       <div
-        className="header navbar navbar-expand-sm fixed-top mr-auto "
+        className="header navbar navbar-expand-sm mr-auto "
         role="navigation"
         style={{
           backgroundColor: "#00000010",
