@@ -130,12 +130,9 @@ nav a:hover {
 
 @media only screen and (max-width: 500px) {
 
-    /*shows elements in a column*/
     nav ul {
         flex-direction: column;
     }
-
-    /* deletes margin on top or bottom of the a tag*/
     nav ul li {
         margin: 0;
         padding: 1% 0%;
@@ -145,12 +142,8 @@ nav a:hover {
     nav ul li:hover{
         background-color: #c2c0c030;
     }
-
-    /* makes sure that the a tag will take the entire screen*/
     nav ul li a {
-        display: block;
-        /* display: inline-block; */
-       
+        display: block;   
     }
 
     nav ul div {
