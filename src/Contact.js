@@ -65,7 +65,7 @@ class Contact extends Component {
             Contact Me
           </h2>
         </div>
-        <div className="row align-items-start">
+        <div className="row align-items-start mx-0">
           {this.state.loading ? (
             <div
                 className='card mr-auto col-sm-5 offset-sm-1 p-1 contact-form'
@@ -166,7 +166,7 @@ class Contact extends Component {
             </div>
           )}
           <div
-            className='p-3 col-sm-5 p-1 contact-card'
+            className='col-sm-5 p-1 contact-card'
           >
             <ul className='card-body'>
               <li className='text-center lead font-weight-bold'>

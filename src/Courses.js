@@ -88,22 +88,22 @@ function Courses() {
   return (
     <div className="courses">
       <h1 className="text-center display-4 my-3 p-3">Courses</h1>
-      <table className="table table-striped table-hover text-center">
-        <thead className="">
-          <tr>
-            <th>Sr. No</th>
-            <th>Title</th>
-            <th>From</th>
-            <th>Completion</th>
-            <th>Certificate</th>
-          </tr>
-        </thead>
-        <tbody>
-          {courses.map((c, i) => (
-            <Course key={i} data={c} srno={i + 1}></Course>
-          ))}
-        </tbody>
-      </table>
+        <table className="table table-striped table-hover text-center table-responsive-sm">
+          <thead className="">
+            <tr>
+              <th>Sr. No</th>
+              <th>Title</th>
+              <th>From</th>
+              <th>Completion</th>
+              <th>Certificate</th>
+            </tr>
+          </thead>
+          <tbody>
+            {courses.map((c, i) => (
+              <Course key={i} data={c} srno={i + 1}></Course>
+            ))}
+          </tbody>
+        </table>
     </div>
   );
 }

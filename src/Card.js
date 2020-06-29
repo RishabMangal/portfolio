@@ -4,8 +4,9 @@ function Card (props) {
   return (
     <div>
       <div className='row card-container'>
+        <div className="col-sm-2"></div>
         <div
-          className='card container-fluid col-sm-6'
+          className='card col-sm-4'
           style={{
             backgroundImage: `url(${props.profilePics})`,
             backgroundSize: 'cover',
@@ -15,7 +16,7 @@ function Card (props) {
             filter:"grayscale(100%)"
           }}
         ></div>
-        <div className='card container-fluid col-sm-6 main-card-body'>
+        <div className='card container-fluid col-sm-4 main-card-body '>
           <ul className='' style={{padding:"2%",paddingTop: "8%",paddingBottom:"7%",margin:0}}>
             <li className='text-dark text-center lead font-weight-bold'>
               Rishab Mangal
@@ -35,7 +36,9 @@ function Card (props) {
             <li className='text-secondary'>20th Oct 1999</li>
           </ul>
         </div>
-        <div className='container-fluid card-footerr'>
+        <div className="col-sm-2"></div>
+        <div className="col-sm-2"></div>
+        <div className='container-fluid card-footerr col-sm-8'>
           <a href='mailto:rishabhmangal1@gmail.com?subject=Awesome App'>
             <i className='fas fa-envelope px-3 mr-auto'></i>
           </a>
@@ -58,6 +61,7 @@ function Card (props) {
             <i className='fab fa-google-plus px-3 mr-auto'></i>
           </a>
         </div>
+        <div className="col-sm-2"></div>
       </div>
     </div>
   )

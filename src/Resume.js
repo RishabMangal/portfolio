@@ -13,12 +13,16 @@ import Courses from "./Courses";
 class Resume extends Component {
   render() {
     return (
-      <div style={{ padding: "0px", margin: "0px",overflowX:"hidden" }}>
+      <div>
         <Navbar></Navbar>
         <div
           id="home"
           className="container-fluid cover"
-          style={{ backgroundImage: `url(${cover})`, backgroundPosition: "center", backgroundAttachment: "fixed",backdropFilter:"2" }}
+          style={{
+            backgroundImage: `url(${cover})`,
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+          }}
         >
           <Card profilePics={profilePic}></Card>
         </div>

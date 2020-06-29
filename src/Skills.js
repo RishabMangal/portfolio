@@ -118,7 +118,7 @@ function Skills(props) {
   return (
     <div className="text-center skills">
       <h2 className="display-4 skills-header">Skills</h2>
-      <div className="row">
+      <div className="row mx-0">
         {skills.map((d, i) => (
           <div className="col-sm-3 mr-0" key={i}>
             <Skill
