@@ -4,7 +4,7 @@ function Course(props) {
   const { title, from, duration } = props.data;
   return (
     <>
-      <tr>
+      <tr onClick={()=>window.location=`https://rishus-apis.herokuapp.com/certi/${title}`}>
         <td>{props.srno}</td>
         <td style={{ fontFamily: "cursive", textAlign: "left" }} className="">
           {title}

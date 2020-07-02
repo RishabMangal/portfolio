@@ -11,6 +11,7 @@ body {
     -ms-overflow-style: none;
     /* IE and Edge */
     scrollbar-width: none;
+    font-size: large;
     /* Firefox */
 }
 
@@ -133,17 +134,20 @@ nav a:hover {
     nav ul {
         flex-direction: column;
     }
+
     nav ul li {
         margin: 0;
         padding: 1% 0%;
         margin: 0 1vw;
         font-size: 2vh;
     }
-    nav ul li:hover{
+
+    nav ul li:hover {
         background-color: #c2c0c030;
     }
+
     nav ul li a {
-        display: block;   
+        display: block;
     }
 
     nav ul div {
@@ -172,6 +176,7 @@ nav a:hover {
         outline: none;
         cursor: pointer;
     }
+
     nav ul div button:hover {
         background-color: #5bc0ff96;
     }
@@ -307,10 +312,69 @@ nav a:hover {
     padding: 10px;
 }
 
+#education{
+    background-color: #222;
+}
 
 
+#education table th {
+    font-size: larger;
+    color: #007bff;
+    border-left: 1px solid gray;   
+    padding: 30px;
 
+}
 
+#education table td {
+    font-size: large;
+    color: rgb(160, 160, 255);
+    border-left: 1px solid grey;   
+    padding: 20px;
+    padding-top: 0px;
+
+}
+
+#education table{
+    /* border: 1px solid rgb(55, 0, 255);    */
+    /* border-style: dashed; */
+    margin: 4% auto;
+    filter: drop-shadow(4px 5px 20px rgb(36, 36, 250));
+    border:1px groove white;
+    border-radius: 10px !important;
+}
+
+.text-cursive{
+    font-family: cursive;
+}
+
+.certi-container{
+    background-color: rgb(32, 32, 32,0.1);
+    padding: 5px;
+    float: right;
+    width:20px;
+    height:20px
+}
+.certi-container:hover{
+    background-color: rgb(54, 54, 54,0.2);
+    padding: 8px;
+    width:20px;
+    height:20px;
+    /* border:1px solid black; */
+    border-radius: 20px;
+}
+
+.certi-logo{
+    color:rgb(235, 34, 74);
+    /* padding: 10px; */
+    /* font-size: large; */
+    animation: none !important;
+}
+
+.certi-logo:hover{
+    color:rgb(255, 72, 0);
+    animation: none !important;
+    /* padding: 0%; */
+}
 
 .skills {
     background-color: #000;
@@ -357,6 +421,19 @@ nav a:hover {
 .skillimg {
     width: 100%;
 }
+
+
+.courses table tbody tr{
+    cursor: pointer;
+}
+.courses table tbody tr:hover{
+    cursor: pointer;
+    color: #1d7fff;
+    /* font-style: italic; */
+    /* font-family:Arial, Helvetica, sans-serif !important; */
+    /* text-transform: lowercase; */
+}
+
 
 
 

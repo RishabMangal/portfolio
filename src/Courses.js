@@ -8,6 +8,16 @@ function Courses() {
       duration: "May 2020-Jun 2020",
     },
     {
+      title: "JavaScript-Getting Started",
+      from: "Pluralsight",
+      duration: "May 2020-Jun 2020",
+    },
+    {
+      title: "JavaScript Fundamentals for ES6",
+      from: "Pluralsight",
+      duration: "May 2020-Jun 2020",
+    },
+    {
       title: "jQuery Fundamentals",
       from: "Pluralsight",
       duration: "May 2020-Jun 2020",
@@ -19,6 +29,11 @@ function Courses() {
     },
     {
       title: "React Getting Started",
+      from: "Pluralsight",
+      duration: "May 2020-Jun 2020",
+    },
+    {
+      title: "Advanced React",
       from: "Pluralsight",
       duration: "May 2020-Jun 2020",
     },
@@ -59,6 +74,11 @@ function Courses() {
     },
     {
       title: "React Native -The Big Picture",
+      from: "Pluralsight",
+      duration: "May 2020-Jun 2020",
+    },
+    {
+      title: "React Native Fundamentals",
       from: "Pluralsight",
       duration: "May 2020-Jun 2020",
     },

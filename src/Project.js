@@ -47,12 +47,13 @@ function Project(props) {
                 ></i>
               );
             })}
-            {props.data.logo ? (
-              <img
-                src={props.data.logo}
-                alt="mongoDB"
+            {props.data.logo.length ? (
+              props.data.logo.map((l,i)=>(<img
+                src={l}
+                key={i}
+                alt={`${i+1}-logo`}
                 className="tech-logo lik"
-              ></img>
+              ></img>))
             ) : null}
           </div>
           <a href={props.data.link} target="blank">

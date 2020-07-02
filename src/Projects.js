@@ -2,13 +2,14 @@ import React from "react";
 import portfolio from "./logo/portfolio.png";
 import backmeup from "./logo/backmeup.png";
 import gitscard from "./logo/gitscard.png";
+import currenter from "./logo/currenter.png";
 import mongodb from "./logo/mongodb.png";
 import todo from "./logo/todo.png";
 import contactmanager from "./logo/contactmanager.png";
 import feed from "./logo/feed.jpg";
 import covid from './logo/covid.png';
 import Project from "./Project";
-
+import react from './logo/react.jpg';
 function Projects() {
   const projects = [
     {
@@ -23,7 +24,7 @@ function Projects() {
         "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
-      logo: mongodb,
+      logo: [react,mongodb],
       // animationr: "slider 2s infinite ",
       // animationl: "slidel 5s infinite "
     },
@@ -38,35 +39,22 @@ function Projects() {
         "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
-      logo: null,
+      logo: [react],
       // animationr: "slider 2s infinite ",
       // animationl: "slidel 5s infinite "
     },
     {
-      title: "Portfolio",
-      link: "https://rishabmangal.netlify.app",
-      image: portfolio,
-      tagline: "A simple App to Showcase my CV and Skills.",
+      title: "Currency Converter",
+      link: "https://currenter.netlify.app/",
+      image: currenter,
+      tagline: "A simple React app to Convert Currency using FIXER API.",
       tech: [
         "fab fa-html5 px-2 mr-2 font-weight-light",
         "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
         "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
-      logo: null,
-    },
-    {
-      title: "TO-DO App",
-      link: "https://tooo-dooo.herokuapp.com/",
-      image: todo,
-      tagline: "A simple To-Do App to Store your todo list.",
-      tech: [
-        "fab fa-html5 px-2 mr-2 font-weight-light",
-        "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
-        "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
-        "fab fa-node px-2 mr-2 text-success font-weight-light",
-      ],
-      logo: mongodb,
+      logo: [react],
       // animationr: "slider 2s infinite ",
       // animationl: "slidel 5s infinite "
     },
@@ -81,10 +69,39 @@ function Projects() {
         "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
-      logo: null,
+      logo: [react],
       // animationr: "slider 2s infinite ",
       // animationl: "slidel 5s infinite "
     },
+    {
+      title: "TO-DO App",
+      link: "https://tooo-dooo.herokuapp.com/",
+      image: todo,
+      tagline: "A simple To-Do App to Store your todo list.",
+      tech: [
+        "fab fa-html5 px-2 mr-2 font-weight-light",
+        "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
+        "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
+        "fab fa-node px-2 mr-2 text-success font-weight-light",
+      ],
+      logo: [react,mongodb],
+      // animationr: "slider 2s infinite ",
+      // animationl: "slidel 5s infinite "
+    },
+    {
+      title: "Portfolio",
+      link: "https://rishabmangal.netlify.app",
+      image: portfolio,
+      tagline: "A simple App to Showcase my CV and Skills.",
+      tech: [
+        "fab fa-html5 px-2 mr-2 font-weight-light",
+        "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
+        "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
+        "fab fa-node px-2 mr-2 text-success font-weight-light",
+      ],
+      logo: [react],
+    },
+    
     {
       title: "Contact Manager",
       link: "https://rishabmangal.github.io/Contact-Manager/#/",
@@ -96,7 +113,7 @@ function Projects() {
         "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
-      logo: null,
+      logo: [react],
       // animationl: "slidel 2s infinite "
     },
     {
@@ -111,7 +128,7 @@ function Projects() {
         "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
-      logo: mongodb,
+      logo: [react,mongodb],
     },
     {
       title: "Feedback Software",
@@ -119,7 +136,7 @@ function Projects() {
       image: feed,
       tagline: " A simple App to Store Customers Feedback For a Cafe.",
       tech: ["fab fa-python px-2 mr-2 text-warning font-weight-light"],
-      logo: null,
+      logo: [],
     },
   ];
   return (
