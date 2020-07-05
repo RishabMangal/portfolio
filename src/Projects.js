@@ -1,6 +1,7 @@
 import React from "react";
 import portfolio from "./logo/portfolio.png";
 import backmeup from "./logo/backmeup.png";
+import letschat from './logo/letschat.png';
 import gitscard from "./logo/gitscard.png";
 import currenter from "./logo/currenter.png";
 import mongodb from "./logo/mongodb.png";
@@ -25,6 +26,21 @@ function Projects() {
         "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
       logo: [react,mongodb],
+      // animationr: "slider 2s infinite ",
+      // animationl: "slidel 5s infinite "
+    },
+    {
+      title: "Lets Chat",
+      link: "https://letschatt.netlify.app/",
+      image: letschat,
+      tagline: "A Simple React Chat App Using Socket.io",
+      tech: [
+        "fab fa-html5 px-2 mr-2 font-weight-light",
+        "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
+        "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
+        "fab fa-node px-2 mr-2 text-success font-weight-light",
+      ],
+      logo: [react],
       // animationr: "slider 2s infinite ",
       // animationl: "slidel 5s infinite "
     },
