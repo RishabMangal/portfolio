@@ -312,78 +312,78 @@ nav a:hover {
     padding: 10px;
 }
 
-#education{
-    background-color: #222;
+#education {
+    /* background-color: #222; */
 }
 
 
 #education table th {
     font-size: larger;
     color: #007bff;
-    border-left: 1px solid gray;   
+    border-left: 1px solid gray;
     padding: 30px;
 
 }
 
 #education table td {
     font-size: large;
-    color: rgb(160, 160, 255);
-    border-left: 1px solid grey;   
+    /* color: rgb(160, 160, 255); */
+    color: #929292;
+    border-left: 1px solid grey;
     padding: 20px;
     padding-top: 0px;
 
 }
 
-#education table{
+#education table {
     /* border: 1px solid rgb(55, 0, 255);    */
     /* border-style: dashed; */
-    margin: 4% auto;
-    filter: drop-shadow(4px 5px 20px rgb(36, 36, 250));
-    border:1px groove white;
+    margin-top: 4%;
+    filter: drop-shadow(2px 2px 5px #858585);
+    border: 1px groove white;
     border-radius: 10px !important;
 }
 
-.text-cursive{
+.text-cursive {
     font-family: cursive;
 }
 
-.certi-container{
-    background-color: rgb(32, 32, 32,0.1);
-    padding: 5px;
+.certi-container {
+    /* background-color: rgb(32, 32, 32, 0.1); */
+    /* padding: 5px; */
     float: right;
-    width:20px;
-    height:20px
-}
-.certi-container:hover{
-    background-color: rgb(54, 54, 54,0.2);
-    padding: 8px;
-    width:20px;
-    height:20px;
-    /* border:1px solid black; */
-    border-radius: 20px;
+    width: 20px;
+    height: 20px
 }
 
-.certi-logo{
-    color:rgb(235, 34, 74);
+.certi-container:hover {
+    /* background-color: rgb(54, 54, 54, 0.2); */
+    /* padding: 6px; */
+    /* border:1px solid black; */
+    /* border-radius: 20px; */
+}
+
+.certi-logo {
+    color: rgb(235, 34, 74);
     /* padding: 10px; */
     /* font-size: large; */
     animation: none !important;
 }
 
-.certi-logo:hover{
-    color:rgb(255, 72, 0);
+.certi-logo:hover {
+    color: rgb(255, 72, 0);
     animation: none !important;
     /* padding: 0%; */
 }
 
 .skills {
-    background-color: #000;
+    /* background-color: #000; */
 }
 
 .skills-header {
     padding: 15px;
-    color: #fff;
-    background-color: #111;
+    color: black;
+    /* background-color: #111;   */
     border-bottom: 1px solid grey;
 }
 
@@ -391,7 +391,8 @@ nav a:hover {
     display: inline-block;
     width: 80%;
     vertical-align: top;
-    background-color: #111;
+    color: #000;
+    background-color: #f1f1f1;
     border-radius: 5%;
     margin-top: 10%;
     margin-bottom: 10%;
@@ -423,10 +424,11 @@ nav a:hover {
 }
 
 
-.courses table tbody tr{
+.courses table tbody tr {
     cursor: pointer;
 }
-.courses table tbody tr:hover{
+
+.courses table tbody tr:hover {
     cursor: pointer;
     color: #1d7fff;
     /* font-style: italic; */

@@ -7,9 +7,10 @@ function Education() {
       year: "2018-2022",
       title: "Bachelor's Degree",
       from: "Indian Institute of Information Technology Kota",
-      description:"I am pursuing B.Tech from IIIT Kota.I am a Second Year Graduate.My stream is Computer Science Engineering.",
+      description:
+        "I am pursuing B.Tech from IIIT Kota.I am a Second Year Graduate.My stream is Computer Science Engineering.",
       location: "Jaipur | Rajasthan",
-      slug:"btech"
+      slug: "btech",
     },
     {
       year: "2017-2018",
@@ -17,7 +18,7 @@ function Education() {
       from: "Meritto Institute Japiur",
       description: "I was preparing for Joint Entrance Exam Mains and Advance.",
       location: "Jaipur | Rajasthan",
-      slug:"jee"
+      slug: "jee",
     },
     {
       year: "2015-2017",
@@ -26,7 +27,7 @@ function Education() {
       description:
         "I Have completed my High School from RBSE with Maths and Science as my Primary Branch.",
       location: "Paota | Jaipur | Rajasthan",
-      slug:"12th"
+      slug: "12th",
     },
     {
       year: "2002-2015",
@@ -34,18 +35,15 @@ function Education() {
       from: "Good Shephred Sr. Secondary School",
       description: "I Have completed my Schooling from RBSE.",
       location: "Paota | Jaipur | Rajasthan",
-      slug:"10th"
+      slug: "10th",
     },
   ];
   return (
     <div>
       <div className="card text-center p-2 my-5" id="education">
         <h2 className="display-4 skills-header">Education</h2>
-        <div className="">
-          <table
-            className="table text-left table-borderless"
-            style={{ width: "70%", marginLeft: "auto", marginRight: "auto" }}
-          >
+        <div className="container">
+          <table className="table table-responsive text-left table-borderless w-100">
             <tbody>
               {educard.map((e, i) => (
                 <Educard
