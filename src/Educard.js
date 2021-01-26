@@ -1,11 +1,11 @@
 import React from "react";
 
 function Educard({ title, year, from, description, location, i, slug }) {
-  const color = i % 2 ? "#fdfdfd" : "#f1f1f1";
+  const color = i % 2 ? "#f9f9f9" : "#ffffff";
   return (
     <>
-      <tr style={{ backgroundColor: color, whiteSpace: "nowrap" }}>
-        <th className="text-right">{year}</th>
+      <tr style={{ backgroundColor: color, whiteSpace: "" }}>
+        <th className="text-right border-right">{year}</th>
         <th>
           {from}
           <span className="certi-container">
@@ -19,13 +19,16 @@ function Educard({ title, year, from, description, location, i, slug }) {
         </th>
       </tr>
       <tr style={{ backgroundColor: color }}>
-        <td className="text-right" style={{ whiteSpace: "nowrap" }}>
+        <td
+          className="text-right border-right"
+          style={{ whiteSpace: "nowrap" }}
+        >
           {title}
         </td>
         <td className="text-cursive">{description}</td>
       </tr>
       <tr style={{ backgroundColor: color }}>
-        <td>{}</td>
+        <td className="border-right">{}</td>
         <td className="lead ">{location}</td>
       </tr>
     </>

@@ -28,7 +28,7 @@ li {
 i {
     color: rgb(255, 255, 255);
     font-size: 3vh;
-    animation: threeD 10s infinite;
+    animation: threeD 10s linear infinite;
 }
 
 i:hover {
@@ -55,30 +55,30 @@ p {
 
 h1 {
     /* font-size: 38px; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(88, 88, 88, 0.082), 0 6px 20px 0 rgba(95, 95, 95, 0.096);
 
 }
 
 h2 {
     /* font-size: 33px; */
-    box-shadow: 0 4px 4px 0 rgba(92, 91, 91, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 4px 0 rgba(133, 133, 133, 0.2), 0 6px 20px 0 rgba(148, 148, 148, 0.19);
 }
 
 
 /* -------------------navbar=--------------------- */
 
-nav {
-    width: 100vw;
+.nav {
+    width: 100%;
     background-color: #e2f4ffc0;
     position: fixed;
     z-index: 10;
 }
 
-nav button {
+.nav button {
     display: none;
 }
 
-nav ul {
+.nav ul {
     margin: 0 !important;
     padding: 0 !important;
     display: flex;
@@ -86,7 +86,7 @@ nav ul {
     width: 100%;
 }
 
-nav ul li {
+.nav ul li {
     display: inline-block;
     padding: 1% 0%;
     margin: 0 1vw;
@@ -94,13 +94,13 @@ nav ul li {
     vertical-align: middle;
 }
 
-nav ul div {
+.nav ul div {
     float: left;
     margin-left: 0;
     margin-right: auto;
 }
 
-nav ul div a {
+.nav ul div a {
     display: inline-flex;
     padding: 1vw;
     color: rgb(17, 17, 59);
@@ -113,7 +113,7 @@ nav ul div a {
 
 }
 
-nav a {
+.nav a {
     text-decoration: none;
     color: black;
     /*I added some padding*/
@@ -123,7 +123,7 @@ nav a {
 
 }
 
-nav a:hover {
+.nav a:hover {
     /* color: #C6E9FF10; */
     color: rgb(255, 255, 255);
 }
@@ -131,32 +131,32 @@ nav a:hover {
 
 @media only screen and (max-width: 500px) {
 
-    nav ul {
+    .nav ul {
         flex-direction: column;
     }
 
-    nav ul li {
+    .nav ul li {
         margin: 0;
         padding: 1% 0%;
         margin: 0 1vw;
         font-size: 2vh;
     }
 
-    nav ul li:hover {
+    .nav ul li:hover {
         background-color: #c2c0c030;
     }
 
-    nav ul li a {
+    .nav ul li a {
         display: block;
     }
 
-    nav ul div {
+    .nav ul div {
         display: flex;
         flex-direction: row;
         width: 100%;
     }
 
-    nav ul div a {
+    .nav ul div a {
         padding: 3vw;
         font-size: 2vh;
         cursor: pointer;
@@ -165,7 +165,7 @@ nav a:hover {
 
     }
 
-    nav ul div button {
+    .nav ul div button {
         display: flex;
         margin: 5px;
         align-self: flex-end;
@@ -177,7 +177,7 @@ nav a:hover {
         cursor: pointer;
     }
 
-    nav ul div button:hover {
+    .nav ul div button:hover {
         background-color: #5bc0ff96;
     }
 }
@@ -261,30 +261,49 @@ nav a:hover {
 .cover {
     background-size: cover;
     width: 100%;
-    height: 685px;
-    min-height: 672px;
-    padding: 1px;
+    /* height: 685px; */
+    /* min-height: 672px; */
+    padding: 0px;
 }
 
 .card-container {
-    /* width: 60%; */
-    margin-top: 14%;
-    padding: 1px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 1000px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* margin-top: 14%; */
+    /* padding: 1px; */
+    margin: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+}
+
+.picture-card {
+    background-size: cover;
+    min-height: 330px;
+    animation: slideright 2s;
+    background-position: center;
+    filter: grayscale(100%);
 }
 
 .main-card-body {
     animation: slideleft 2s;
+    padding: "2% 0%";
+    padding-top: "8%";
+    padding-bottom: "7%";
+    margin: 0;
 }
 
 .card-footerr {
     background-color: rgb(14, 24, 66);
-    padding-bottom: 1%;
-    padding-top: 2%;
-    animation: slideup 1.9s;
-    margin-bottom: 20%;
+    animation: slideup 2s;
     text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    padding: 1%;
+    transition: all ease-in-out;
 }
 
 .card-footerr i {
@@ -296,13 +315,14 @@ nav a:hover {
 
 
 .info {
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+    /* box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(83, 83, 83, 0.19); */
     margin-top: 13%;
+    font-size: 3rem;
 }
 
 .intro {
     /* font-size: 38px; */
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 .discription {
@@ -310,6 +330,17 @@ nav a:hover {
     margin-bottom: 5%;
     page-break-after: auto;
     padding: 10px;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    letter-spacing: 2px;
+    font-family: cursive;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+
 }
 
 #education {
@@ -320,8 +351,8 @@ nav a:hover {
 #education table th {
     font-size: larger;
     color: #007bff;
-    border-left: 1px solid gray;
-    padding: 30px;
+    /* border-left: 1px solid gray; */
+    padding: 2rem;
 
 }
 
@@ -329,8 +360,8 @@ nav a:hover {
     font-size: large;
     /* color: rgb(160, 160, 255); */
     color: #929292;
-    border-left: 1px solid grey;
-    padding: 20px;
+    /* border-left: 1px solid grey; */
+    padding: 1.5rem;
     padding-top: 0px;
 
 }
@@ -356,12 +387,12 @@ nav a:hover {
     height: 20px
 }
 
-.certi-container:hover {
-    /* background-color: rgb(54, 54, 54, 0.2); */
-    /* padding: 6px; */
-    /* border:1px solid black; */
-    /* border-radius: 20px; */
-}
+/* .certi-container:hover { */
+/* background-color: rgb(54, 54, 54, 0.2); */
+/* padding: 6px; */
+/* border:1px solid black; */
+/* border-radius: 20px; */
+/* } */
 
 .certi-logo {
     color: rgb(235, 34, 74);
@@ -389,26 +420,14 @@ nav a:hover {
 
 .skill {
     display: inline-block;
-    width: 80%;
-    vertical-align: top;
-    color: #000;
-    background-color: #f1f1f1;
-    border-radius: 5%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 8%;
-    margin-right: 8%;
+    border-radius: 10px;
+    margin: 8%;
     padding: 5%;
-    filter: drop-shadow(8px 8px 10px gray);
-    /* border: 2px solid black !important; */
-    animation: disco 5s linear infinite;
-    /* box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    filter: drop-shadow(2px 2px 5px gray);
 }
 
 .skill:hover {
-    /* animation: icon-3d 10s */
-    /* padding: 10%; */
-    filter: drop-shadow(8px 8px 20px rgb(0, 140, 255));
+    filter: drop-shadow(2px 2px 8px rgb(0, 140, 255));
     cursor: pointer;
 }
 
@@ -416,7 +435,6 @@ nav a:hover {
     width: 40%;
     float: left;
     padding: 5%;
-    /* background-color: red; */
 }
 
 .skillimg {
@@ -435,9 +453,6 @@ nav a:hover {
     /* font-family:Arial, Helvetica, sans-serif !important; */
     /* text-transform: lowercase; */
 }
-
-
-
 
 .hobby {
     width: 10%;
@@ -532,12 +547,12 @@ nav a:hover {
 
 
 .project {
-    border: 2px solid black;
+    border: 5px dashed #f1f1f1;
     border-radius: 10px;
-    animation: disco 10s linear infinite;
+    /* animation: disco 10s linear; */
     overflow: hidden;
     margin-top: 100px;
-    filter: drop-shadow(1px 1px 2px gray);
+    filter: drop-shadow(1px 1px 1px gray);
 }
 
 .project i {
@@ -573,71 +588,73 @@ nav a:hover {
 
 @keyframes slideright {
     0% {
-        position: absolute;
-        top: 0%;
-        right: 60%;
-        height: 46%;
-        width: 30%;
+        /* position: absolute; */
+        /* top: -10%; */
+        left: -10%;
+        /* height: 46%; */
+        /* width: 30%; */
         opacity: 0.1;
     }
 
     100% {
-        position: absolute;
-        top: 27%;
-        right: 50%;
-        height: 46%;
-        width: 30%;
-        opacity: 0.9;
+        /* position: absolute; */
+        /* top: 7%; */
+        left: 0%;
+        /* height: 46%; */
+        /* width: 30%; */
+        opacity: 1;
     }
 }
 
 @keyframes slideleft {
     0% {
-        position: absolute;
+        /* position: absolute; */
         top: 0%;
-        left: 60%;
-        height: 46%;
-        width: 30%;
+        right: -10%;
+        /* height: 46%; */
+        /* width: 30%; */
         opacity: 0;
-        padding-top: 0%;
+        /* padding-top: 0%;
         padding-left: 1%;
-        padding-right: 1%;
+        padding-right: 1%; */
     }
 
     100% {
-        position: absolute;
-        top: 27%;
-        left: 50%;
-        height: 46%;
-        width: 30%;
-        opacity: 0.9;
-        padding-top: 3.5%;
+        /* position: absolute; */
+        top: 7%;
+        right: 0%;
+        /* height: 46%; */
+        /* width: 30%; */
+        opacity: 1;
+        /* padding-top: 3.5%;
         padding-left: 0.5%;
-        padding-right: 1%;
+        padding-right: 1%; */
     }
 }
 
 @keyframes slideup {
     0% {
-        position: absolute;
-        top: 90%;
-        height: 9%;
-        width: 60%;
+        /* position: absolute; */
+        /* bottom: 20%; */
+        /* height: 9%; */
+        /* width: 60%; */
         opacity: 0;
-        padding-left: 15%;
-        padding-top: 0%;
-        background-color: #29377A50;
+        margin-top: 2%;
+        /* padding-left: 15%; */
+        /* padding-top: 0%; */
+        /* background-color: #29377A50; */
     }
 
     100% {
-        position: absolute;
-        top: 73.25%;
-        height: 9%;
-        width: 60%;
-        opacity: 0.8;
-        padding-left: 15%;
-        padding-top: 1%;
-        background-color: rgb(23, 36, 102);
+        /* position: absolute; */
+        /* bottom: 30%; */
+        /* height: 9%; */
+        /* width: 60%; */
+        margin-top: 0px;
+        opacity: 1;
+        /* padding-left: 15%; */
+        /* padding-top: 1%; */
+        /* background-color: rgb(23, 36, 102); */
 
 
     }
@@ -753,7 +770,7 @@ nav a:hover {
 
 @keyframes threeD1 {
     0% {
-        transform: rotate3d(0, 1, 0, -90deg);
+        transform: rotate3d(0, 1, 0, 0deg);
     }
 
     25% {
@@ -762,12 +779,12 @@ nav a:hover {
     }
 
     50% {
-        transform: rotate3d(0, 0, 1, -270deg);
+        transform: rotate3d(0, 1, 0, 360deg);
 
     }
 
     100% {
-        transform: rotate3d(0, 1, 0, 360deg);
+        transform: rotate3d(0, 1, 0, 0deg);
     }
 }
 
@@ -776,18 +793,18 @@ nav a:hover {
         transform: rotate3d(0, 1, 0, 90deg);
     }
 
-    25% {
-        transform: rotate3d(0, 0, 1, -180deg);
+    /* 25% {
+        transform: rotate3d(0, 1, 0, -180deg);
 
     }
-
+*/
     50% {
-        transform: rotate3d(1, 0, 0, 270deg);
+        transform: rotate3d(0, 1, 0, -360deg);
 
     }
 
     100% {
-        transform: rotate3d(0, 1, 0, -360deg);
+        transform: rotate3d(0, 1, 0, 90deg);
     }
 }
 

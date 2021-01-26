@@ -10,22 +10,14 @@ import Projects from "./Projects";
 import Hobbies from "./Hobbies";
 import Contact from "./Contact";
 import Courses from "./Courses";
+import CardFooter from "./CardFooter";
 class Resume extends Component {
   render() {
     return (
-      <div>
+      <div id="home">
         <Navbar></Navbar>
-        <div
-          id="home"
-          className="container-fluid cover"
-          style={{
-            backgroundImage: `url(${cover})`,
-            backgroundPosition: "center",
-            backgroundAttachment: "fixed",
-          }}
-        >
-          <Card profilePics={profilePic}></Card>
-        </div>
+        <Card profilePics={profilePic} cover={cover}></Card>
+        <CardFooter></CardFooter>
         <Intro></Intro>
         <Education></Education>
         <Skills></Skills>

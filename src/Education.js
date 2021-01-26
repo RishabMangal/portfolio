@@ -40,10 +40,10 @@ function Education() {
   ];
   return (
     <div>
-      <div className="card text-center p-2 my-5" id="education">
+      <div className="text-center p-2 my-5" id="education">
         <h2 className="display-4 skills-header">Education</h2>
-        <div className="container">
-          <table className="table table-responsive text-left table-borderless w-100">
+        <div className="table-container">
+          <table className="table table-responsive text-left table-borderless">
             <tbody>
               {educard.map((e, i) => (
                 <Educard

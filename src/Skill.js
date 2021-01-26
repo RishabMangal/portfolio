@@ -1,21 +1,22 @@
-import React from 'react'
+import React from "react";
 
-function Skill (props) {
+function Skill(props) {
   return (
-    <div className='skill'>
-      <div className='skillimgdiv' style={{ animation: `${props.animation}` }}>
+    <div className="skill bg-light">
+      <div className="skillimgdiv" style={{ animation: `${props.animation}` }}>
         <img
-          className='skillimg'
+          className="skillimg"
           src={props.skillimg}
-          alt={props.name + ' logo'}
+          alt={props.name + " logo"}
         ></img>
       </div>
-      <div className='lead text-light font-weight-bold text-center p-2'>
-        {props.name}<br></br>
-        <p className='m-2 text-secondary font-weight-light'>{props.level}</p>
+      <div className="lead font-weight-bold text-center p-2">
+        {props.name}
+        <br></br>
+        <p className="m-2 text-secondary font-weight-light">{props.level}</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Skill
+export default Skill;
