@@ -35,9 +35,7 @@ function Card(props) {
             <li className="text-dark">Email:</li>
             <li className="text-secondary">rishabhmangal1@gmail.com</li>
             <li className="text-dark">Address:</li>
-            <li className="text-secondary">
-              Ganga Hostel | MNIT Japiur | Rajasthan | India
-            </li>
+            <li className="text-secondary"> Japiur | Rajasthan | India</li>
             <li className="text-dark">Birthday:</li>
             <li className="text-secondary">20th Oct 1999</li>
           </ul>

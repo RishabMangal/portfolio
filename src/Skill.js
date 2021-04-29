@@ -11,8 +11,7 @@ function Skill(props) {
         ></img>
       </div>
       <div className="lead font-weight-bold text-center p-2">
-        {props.name}
-        <br></br>
+        <p>{props.name}</p>
         <p className="m-2 text-secondary font-weight-light">{props.level}</p>
       </div>
     </div>

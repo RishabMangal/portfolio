@@ -419,7 +419,9 @@ h2 {
 }
 
 .skill {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 10px;
     margin: 8%;
     padding: 5%;
