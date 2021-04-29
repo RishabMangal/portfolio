@@ -45,14 +45,6 @@ a:link {
     text-decoration-color: none;
 }
 
-a {
-    /* font-size: 26px !important; */
-}
-
-p {
-    /* font-size: 26px !important; */
-}
-
 h1 {
     /* font-size: 38px; */
     box-shadow: 0 4px 8px 0 rgba(88, 88, 88, 0.082), 0 6px 20px 0 rgba(95, 95, 95, 0.096);
@@ -241,10 +233,6 @@ h2 {
 
 
 
-.download {}
-
-.download:hover {}
-
 .check:hover {
     background-color: black;
 }
@@ -320,11 +308,6 @@ h2 {
     font-size: 3rem;
 }
 
-.intro {
-    /* font-size: 38px; */
-    /* margin-top: 5%; */
-}
-
 .discription {
     margin: 1%;
     margin-bottom: 5%;
@@ -342,11 +325,6 @@ h2 {
     margin: auto;
 
 }
-
-#education {
-    /* background-color: #222; */
-}
-
 
 #education table th {
     font-size: larger;
@@ -405,10 +383,6 @@ h2 {
     color: rgb(255, 72, 0);
     animation: none !important;
     /* padding: 0%; */
-}
-
-.skills {
-    /* background-color: #000; */
 }
 
 .skills-header {
@@ -540,13 +514,6 @@ h2 {
     /* font-size: 50px; */
     margin: 50px 10px 10px 10px;
 }
-
-
-
-.lead {
-    /* font-size: 19px */
-}
-
 
 .project {
     border: 5px dashed #f1f1f1;
