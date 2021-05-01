@@ -10,7 +10,7 @@ function Card(props) {
         backgroundSize: "cover",
         display: "flex",
         position: "relative",
-        minHeight: "600px",
+        minHeight: "700px",
       }}
     >
       <div className="row card-container">

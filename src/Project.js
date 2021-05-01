@@ -47,18 +47,20 @@ function Project(props) {
                 ></i>
               );
             })}
-            {props.data.logo.length ? (
-              props.data.logo.map((l,i)=>(<img
-                src={l}
-                key={i}
-                alt={`${i+1}-logo`}
-                className="tech-logo lik"
-              ></img>))
-            ) : null}
+            {props.data.logo.length
+              ? props.data.logo.map((l, i) => (
+                  <img
+                    src={l}
+                    key={i}
+                    alt={`${i + 1}-logo`}
+                    className="tech-logo lik"
+                  ></img>
+                ))
+              : null}
           </div>
           <a href={props.data.link} target="blank">
             <button className="btn btn-primary check float-right">
-              Check this Out
+              {props?.data?.action || "Check this Out"}
               <i className="fas fa-bomb fa-1x mx-2 icon-3d "></i>
             </button>
           </a>

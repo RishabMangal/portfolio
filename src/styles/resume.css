@@ -853,8 +853,8 @@ h2 {
 }
 
 .icon-3d:hover {
-    -webkit-animation: icon3d 200ms infinite;
-    animation: icon3d 200ms infinite;
+    -webkit-animation: icon3d 2s linear infinite;
+    animation: icon3d 2s linear infinite;
 }
 
 @keyframes icon3d {
