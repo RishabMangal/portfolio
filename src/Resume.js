@@ -11,6 +11,7 @@ import Hobbies from "./Hobbies";
 import Contact from "./Contact";
 import Courses from "./Courses";
 import CardFooter from "./CardFooter";
+import WorkList from "./WorkList";
 class Resume extends Component {
   render() {
     return (
@@ -23,6 +24,7 @@ class Resume extends Component {
         <Skills></Skills>
         <Courses></Courses>
         <Projects></Projects>
+        <WorkList></WorkList>
         <Hobbies></Hobbies>
         <Contact></Contact>
       </div>
