@@ -126,7 +126,7 @@ function Skills(props) {
     },
   ];
   return (
-    <div className="text-center skills">
+    <div className="text-center skills" id="skills">
       <h2 className="display-4 skills-header">Skills</h2>
       <div className="row mx-0">
         {skills.map((d, i) => (

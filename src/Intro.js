@@ -8,7 +8,7 @@ function Intro(props) {
       <p className="m-3 intro">Hello! I'm Rishab</p>
       <div className="lead text-secondary discription">
         I am pursuing B.Tech in Computer Science Engineering at{" "}
-        <span className="font-weight-bold" style={{ whiteSpace: "nowrap" }}>
+        <span className="font-weight-bold" style={{ whiteSpace: "normal" }}>
           {" "}
           Indian Institute of Information Technology Kota.
         </span>

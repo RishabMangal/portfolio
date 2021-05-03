@@ -12,11 +12,13 @@ import Contact from "./Contact";
 import Courses from "./Courses";
 import CardFooter from "./CardFooter";
 import WorkList from "./WorkList";
+import MobileNav from "./MobileNav";
+import { isBrowser } from "react-device-detect";
 class Resume extends Component {
   render() {
     return (
       <div id="home">
-        <Navbar></Navbar>
+        {isBrowser ? <Navbar></Navbar> : <MobileNav></MobileNav>}
         <Card profilePics={profilePic} cover={cover}></Card>
         <CardFooter></CardFooter>
         <Intro></Intro>

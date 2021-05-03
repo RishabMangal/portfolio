@@ -19,11 +19,12 @@ ul {
     list-style: none;
 }
 
+/* 
 li {
     padding: 4px;
     padding-left: 8%;
-    /* font-size: 20px; */
-}
+    font-size: 20px;
+}*/
 
 i {
     color: rgb(255, 255, 255);
@@ -59,13 +60,82 @@ h2 {
 
 /* -------------------navbar=--------------------- */
 
-.nav {
+.nav-cus {
     width: 100%;
-    background-color: #e2f4ffc0;
     position: fixed;
     z-index: 10;
 }
 
+/* :root {
+    --pcol: #007bff;
+    --scol: rgb(255, 255, 255);
+    --tspeed: 0.5s;
+    --base-scale: 1.1;
+    --subMenu-width: 12.25rem;
+
+    --fgrad: linear-gradient(139deg,
+            rgb(159, 217, 255) 16%,
+            rgb(94, 118, 255) 52%,
+            rgb(38, 0, 255) 88%);
+    --sgrad: linear-gradient(139deg,
+            rgb(149, 255, 255) 16%,
+            rgb(138, 140, 255) 76%,
+            rgb(0, 132, 255) 100%);
+
+    --rm-font-size: 0.875rem;
+    --sm-font-size: 0.65rem;
+} */
+
+.menu-list-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    /* justify-content: space-around; */
+}
+
+.menu-list-item div {
+    margin-left: 1rem;
+}
+
+.my-node-enter {
+    opacity: 0;
+}
+
+.my-node-enter-active {
+    opacity: 1;
+    transition: opacity 200ms;
+}
+
+.my-node-exit {
+    opacity: 1;
+}
+
+.my-node-exit-active {
+    opacity: 0;
+    transition: opacity 200ms;
+}
+
+@keyframes visible {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes invisible {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* 
 .nav button {
     display: none;
 }
@@ -84,43 +154,49 @@ h2 {
     margin: 0 1vw;
     font-size: 2vh;
     vertical-align: middle;
-}
+} */
 
-.nav ul div {
+/* .nav ul li:hover {
+    background-color: #007bff;
+    color: white !important;
+} */
+
+/* .nav ul div {
     float: left;
     margin-left: 0;
     margin-right: auto;
-}
+} */
 
-.nav ul div a {
+/* .nav ul div a {
     display: inline-flex;
     padding: 1vw;
     color: rgb(17, 17, 59);
-    /* background-color: #00000060; */
     cursor: pointer;
     align-self: flex-start;
     margin-left: 0;
     font-size: 2vh;
     margin-right: auto;
 
-}
+} */
 
-.nav a {
+/* .nav a {
     text-decoration: none;
     color: black;
-    /*I added some padding*/
-    /* padding: 0 1vw; */
-    /*also changed the font family but that's totally irrelevant*/
     font-family: monospace;
 
+} */
+
+/* .nav a:hover {
+    color: rgb(77, 74, 255);
+} */
+
+/* .download:hover {
+    background-color: #007bff;
+    color: white !important;
 }
 
-.nav a:hover {
-    /* color: #C6E9FF10; */
-    color: rgb(255, 255, 255);
-}
-
-
+*/
+/* 
 @media only screen and (max-width: 500px) {
 
     .nav ul {
@@ -172,7 +248,7 @@ h2 {
     .nav ul div button:hover {
         background-color: #5bc0ff96;
     }
-}
+} */
 
 
 /* .topnav {
