@@ -4,6 +4,7 @@ import coide from "./logo/coide.png";
 import jump from "./logo/jump.png";
 import backmeup from "./logo/backmeup.png";
 import letschat from "./logo/letschat.png";
+import rain from "./logo/rain.png";
 import gitscard from "./logo/gitscard.png";
 import currenter from "./logo/currenter.png";
 import mongodb from "./logo/mongodb.png";
@@ -57,6 +58,22 @@ function Projects() {
         "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
         "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
         "fab fa-node px-2 mr-2 text-success font-weight-light",
+      ],
+      logo: [react],
+      // animationr: "slider 2s infinite ",
+      // animationl: "slidel 5s infinite "
+    },
+    {
+      title: "Its's Raining",
+      link: "https://its-raining.netlify.app/",
+      image: rain,
+      tagline:
+        "A React App to get RealTime Weather Update Using Open Weather API.",
+      tech: [
+        "fab fa-html5 px-2 mr-2 font-weight-light",
+        "fab fa-css3-alt px-2 mr-2 text-primary font-weight-light",
+        "fab fa-js-square px-2 mr-2 text-warning font-weight-light",
+        // "fab fa-node px-2 mr-2 text-success font-weight-light",
       ],
       logo: [react],
       // animationr: "slider 2s infinite ",
